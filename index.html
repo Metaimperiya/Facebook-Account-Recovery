@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
 
+    <!-- ====== GOOGLE SITE VERIFICATION ====== -->
+    <meta name="google-site-verification" content="RS-c4zCmiwrQUy9uKeLJOVDVCvz3yt8pJPEGKbIgMnY" />
+
     <!-- ====== ФАВІКОН ====== -->
     <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
 
@@ -11,12 +14,16 @@
     <title>Facebook Account Recovery — Multi-Language Guide</title>
     <meta name="description" content="Step-by-step guide to recover your Facebook account in 23 languages.">
     <meta name="keywords" content="Facebook recovery, unblock Facebook, account disabled, appeal form, help center">
-    <link rel="canonical" href="https://facebook-recovery.vercel.app/">
+    <link rel="canonical" href="https://metaimperiya.github.io/Facebook-Account-Recovery/">
 
+    <!-- ====== OPEN GRAPH / PREVIEW ====== -->
     <meta property="og:title" content="Facebook Account Recovery — Multi-Language Guide">
     <meta property="og:description" content="Step-by-step guide to recover your Facebook account in 23 languages.">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://raw.githubusercontent.com/Metaimperiya/Facebook-Recovery/main/preview.png">
+    <meta property="og:url" content="https://metaimperiya.github.io/Facebook-Account-Recovery/">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Metaimperiya/Facebook-Account-Recovery/main/Facebook_Account_Recovery.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
     <meta name="twitter:card" content="summary_large_image">
 
     <!-- ====== СТИЛІ ====== -->
@@ -39,32 +46,6 @@
             border-radius: 24px;
             border: 1px solid #2a2a2a;
         }
-
-        /* ====== ВИБІР МОВИ ====== */
-        .lang-selector {
-            display: flex;
-            gap: 6px;
-            flex-wrap: wrap;
-            margin-bottom: 16px;
-            justify-content: center;
-        }
-        .lang-btn {
-            background: #1a1a1a;
-            border: 1px solid #2a2a2a;
-            color: #888;
-            padding: 4px 10px;
-            border-radius: 40px;
-            font-size: 0.6rem;
-            cursor: pointer;
-            transition: 0.3s;
-            font-weight: 600;
-        }
-        .lang-btn.active {
-            background: #1877f2;
-            color: #fff;
-            border-color: #1877f2;
-        }
-        .lang-btn:hover { border-color: #1877f2; }
 
         /* ====== ШАПКА ====== */
         .header { text-align: center; padding-bottom: 16px; border-bottom: 2px solid #1877f2; margin-bottom: 16px; }
@@ -255,7 +236,6 @@
             .social-card { flex: 1; min-width: 120px; flex-direction: column; text-align: center; padding: 14px 10px; }
             .social-card .s-icon { width: auto; font-size: 2.2rem; }
             .social-card .s-arrow { display: none; }
-            .lang-btn { font-size: 0.7rem; padding: 5px 14px; }
         }
     </style>
 </head>
@@ -263,39 +243,11 @@
 
 <div class="container">
 
-    <!-- ====== ВИБІР МОВИ ====== -->
-    <div class="lang-selector" id="langSelector">
-        <button class="lang-btn active" data-lang="en">🇬🇧 EN</button>
-        <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
-        <button class="lang-btn" data-lang="pt">🇵🇹 PT</button>
-        <button class="lang-btn" data-lang="ar">🇸🇦 AR</button>
-        <button class="lang-btn" data-lang="hi">🇮🇳 HI</button>
-        <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
-        <button class="lang-btn" data-lang="de">🇩🇪 DE</button>
-        <button class="lang-btn" data-lang="id">🇮🇩 ID</button>
-        <button class="lang-btn" data-lang="tr">🇹🇷 TR</button>
-        <button class="lang-btn" data-lang="it">🇮🇹 IT</button>
-        <button class="lang-btn" data-lang="ru">🇷🇺 RU</button>
-        <button class="lang-btn" data-lang="uk">🇺🇦 UK</button>
-        <button class="lang-btn" data-lang="pl">🇵🇱 PL</button>
-        <button class="lang-btn" data-lang="nl">🇳🇱 NL</button>
-        <button class="lang-btn" data-lang="ja">🇯🇵 JA</button>
-        <button class="lang-btn" data-lang="ko">🇰🇷 KO</button>
-        <button class="lang-btn" data-lang="zh">🇨🇳 ZH</button>
-        <button class="lang-btn" data-lang="bn">🇧🇩 BN</button>
-        <button class="lang-btn" data-lang="ur">🇵🇰 UR</button>
-        <button class="lang-btn" data-lang="vi">🇻🇳 VI</button>
-        <button class="lang-btn" data-lang="th">🇹🇭 TH</button>
-        <button class="lang-btn" data-lang="tl">🇵🇭 TL</button>
-        <button class="lang-btn" data-lang="fa">🇮🇷 FA</button>
-        <button class="lang-btn" data-lang="ms">🇲🇾 MS</button>
-    </div>
-
     <!-- ====== ШАПКА ====== -->
     <div class="header">
         <span class="logo">🌍</span>
-        <h1 data-i18n="title">Facebook Account Recovery</h1>
-        <div class="sub" data-i18n="subtitle">Step-by-step guide to recover your disabled account</div>
+        <h1 id="title">Facebook Account Recovery</h1>
+        <div class="sub" id="subtitle">Step-by-step guide to recover your disabled account</div>
     </div>
 
     <!-- ====== БІГУЧА СТРОКА ====== -->
@@ -312,44 +264,44 @@
         <!-- Пункт 1 -->
         <div class="accordion-item active">
             <button class="accordion-btn">
-                <span><span class="icon">📧</span> <span data-i18n="step1_title">1. Check Email & Notifications</span></span>
+                <span><span class="icon">📧</span> <span id="step1_title">1. Check Email & Notifications</span></span>
                 <span class="arrow">▼</span>
             </button>
             <div class="accordion-content">
-                <p data-i18n="step1_text">Facebook usually sends a reason for the ban to <strong>security@facebookmail.com</strong> or in the notification tab. Check your Spam folder — sometimes emails end up there. If there's no email, the ban was automatic without explanation.</p>
-                <div class="highlight" data-i18n="step1_tip">💡 Tip: Add Facebook email to your white list to avoid missing important messages.</div>
+                <p id="step1_text">Facebook usually sends a reason for the ban to <strong>security@facebookmail.com</strong> or in the notification tab. Check your Spam folder — sometimes emails end up there. If there's no email, the ban was automatic without explanation.</p>
+                <div class="highlight" id="step1_tip">💡 Tip: Add Facebook email to your white list to avoid missing important messages.</div>
             </div>
         </div>
 
         <!-- Пункт 2 -->
         <div class="accordion-item">
             <button class="accordion-btn">
-                <span><span class="icon">📝</span> <span data-i18n="step2_title">2. Submit an Appeal</span></span>
+                <span><span class="icon">📝</span> <span id="step2_title">2. Submit an Appeal</span></span>
                 <span class="arrow">▼</span>
             </button>
             <div class="accordion-content">
-                <p data-i18n="step2_text">Fill out the <strong>Facebook Appeal Form</strong> with your real data. Attach your ID if requested. Be concise and honest — algorithms don't read long texts. Say: "My account was blocked by mistake, I didn't violate rules."</p>
+                <p id="step2_text">Fill out the <strong>Facebook Appeal Form</strong> with your real data. Attach your ID if requested. Be concise and honest — algorithms don't read long texts. Say: "My account was blocked by mistake, I didn't violate rules."</p>
                 <ul>
-                    <li data-i18n="step2_li1">Use the <strong>real name</strong> from your account</li>
-                    <li data-i18n="step2_li2">Attach a photo of your <strong>passport or ID</strong> if requested</li>
-                    <li data-i18n="step2_li3">Submit the appeal <strong>multiple times</strong> from different browsers</li>
+                    <li id="step2_li1">Use the <strong>real name</strong> from your account</li>
+                    <li id="step2_li2">Attach a photo of your <strong>passport or ID</strong> if requested</li>
+                    <li id="step2_li3">Submit the appeal <strong>multiple times</strong> from different browsers</li>
                 </ul>
-                <div class="highlight" data-i18n="step2_tip">⚠️ If the "Submit" button doesn't work — try a different browser or clear your cache.</div>
+                <div class="highlight" id="step2_tip">⚠️ If the "Submit" button doesn't work — try a different browser or clear your cache.</div>
             </div>
         </div>
 
         <!-- Пункт 3 -->
         <div class="accordion-item">
             <button class="accordion-btn">
-                <span><span class="icon">💼</span> <span data-i18n="step3_title">3. Contact Business Manager Support</span></span>
+                <span><span class="icon">💼</span> <span id="step3_title">3. Contact Business Manager Support</span></span>
                 <span class="arrow">▼</span>
             </button>
             <div class="accordion-content">
-                <p data-i18n="step3_text">If you have a <strong>Business Manager</strong> — contact support from there. They respond faster. Business Manager gives access to <strong>live chat support</strong>, unlike regular users.</p>
+                <p id="step3_text">If you have a <strong>Business Manager</strong> — contact support from there. They respond faster. Business Manager gives access to <strong>live chat support</strong>, unlike regular users.</p>
                 <ul>
-                    <li data-i18n="step3_li1">Go to Business Manager → Help → Contact Support</li>
-                    <li data-i18n="step3_li2">Choose <strong>chat or email</strong></li>
-                    <li data-i18n="step3_li3">Describe the problem and add your account ID</li>
+                    <li id="step3_li1">Go to Business Manager → Help → Contact Support</li>
+                    <li id="step3_li2">Choose <strong>chat or email</strong></li>
+                    <li id="step3_li3">Describe the problem and add your account ID</li>
                 </ul>
             </div>
         </div>
@@ -357,34 +309,34 @@
         <!-- Пункт 4 -->
         <div class="accordion-item">
             <button class="accordion-btn">
-                <span><span class="icon">✉️</span> <span data-i18n="step4_title">4. Email Facebook Directly</span></span>
+                <span><span class="icon">✉️</span> <span id="step4_title">4. Email Facebook Directly</span></span>
                 <span class="arrow">▼</span>
             </button>
             <div class="accordion-content">
-                <p data-i18n="step4_text">Try these emails:</p>
+                <p id="step4_text">Try these emails:</p>
                 <ul>
                     <li><strong>disabled@facebook.com</strong></li>
                     <li><strong>appeals@facebook.com</strong></li>
                     <li><strong>support@facebook.com</strong></li>
                 </ul>
-                <p data-i18n="step4_text2">Include: <strong>your name, account email, page ID</strong> and briefly describe the situation. Attach a photo of your ID if available.</p>
-                <div class="highlight" data-i18n="step4_tip">⚠️ The chance of a reply is very low, but it's worth trying. Sometimes automated responses arrive after 2-3 weeks.</div>
+                <p id="step4_text2">Include: <strong>your name, account email, page ID</strong> and briefly describe the situation. Attach a photo of your ID if available.</p>
+                <div class="highlight" id="step4_tip">⚠️ The chance of a reply is very low, but it's worth trying. Sometimes automated responses arrive after 2-3 weeks.</div>
             </div>
         </div>
 
         <!-- Пункт 5 -->
         <div class="accordion-item">
             <button class="accordion-btn">
-                <span><span class="icon">🚫</span> <span data-i18n="step5_title">5. Don't Fall for Scammers</span></span>
+                <span><span class="icon">🚫</span> <span id="step5_title">5. Don't Fall for Scammers</span></span>
                 <span class="arrow">▼</span>
             </button>
             <div class="accordion-content">
-                <p data-i18n="step5_text"><strong>⚠️ Nobody can unlock Facebook for $50.</strong></p>
-                <p data-i18n="step5_text2">If "specialists" promise to unlock your account for money — they are <strong>scammers</strong>. They will take your money and disappear, or worse — block you again.</p>
+                <p id="step5_text"><strong>⚠️ Nobody can unlock Facebook for $50.</strong></p>
+                <p id="step5_text2">If "specialists" promise to unlock your account for money — they are <strong>scammers</strong>. They will take your money and disappear, or worse — block you again.</p>
                 <ul>
-                    <li data-i18n="step5_li1">Never share your <strong>passwords</strong> with anyone</li>
-                    <li data-i18n="step5_li2">Don't click on <strong>suspicious links</strong></li>
-                    <li data-i18n="step5_li3">Remember: <strong>Facebook support is always free</strong></li>
+                    <li id="step5_li1">Never share your <strong>passwords</strong> with anyone</li>
+                    <li id="step5_li2">Don't click on <strong>suspicious links</strong></li>
+                    <li id="step5_li3">Remember: <strong>Facebook support is always free</strong></li>
                 </ul>
             </div>
         </div>
@@ -392,24 +344,24 @@
 
     <!-- ====== СТАТТЯ ====== -->
     <div style="margin-top: 16px; background: #1a1a1a; border-radius: 16px; padding: 16px; border: 1px solid #2a2a2a;">
-        <h2 style="font-size: 1.1rem; color: #fff; margin-bottom: 8px;" data-i18n="article_title">📌 In any case — prepare a new account</h2>
-        <p style="color: #bbb; font-size: 0.85rem; margin-bottom: 8px;" data-i18n="article_p1"><strong>Reality is:</strong> even if you submit an appeal and contact support — <strong>the chance of unblocking is minimal</strong>. Algorithms don't listen, support doesn't respond, there are no real people inside Facebook.</p>
-        <p style="color: #bbb; font-size: 0.85rem; margin-bottom: 8px;" data-i18n="article_p2">Therefore, the <strong>only working solution</strong> is to create a new account and start from scratch. Yes, it hurts. Yes, it's unfair. But that's <strong>reality</strong>.</p>
+        <h2 style="font-size: 1.1rem; color: #fff; margin-bottom: 8px;" id="article_title">📌 In any case — prepare a new account</h2>
+        <p style="color: #bbb; font-size: 0.85rem; margin-bottom: 8px;" id="article_p1"><strong>Reality is:</strong> even if you submit an appeal and contact support — <strong>the chance of unblocking is minimal</strong>. Algorithms don't listen, support doesn't respond, there are no real people inside Facebook.</p>
+        <p style="color: #bbb; font-size: 0.85rem; margin-bottom: 8px;" id="article_p2">Therefore, the <strong>only working solution</strong> is to create a new account and start from scratch. Yes, it hurts. Yes, it's unfair. But that's <strong>reality</strong>.</p>
         <div style="background: #111; border-left: 3px solid #f39c12; padding: 10px 14px; border-radius: 10px; margin: 8px 0;">
-            <strong style="color: #f39c12;" data-i18n="article_tip_label">💡 Tip:</strong>
-            <span style="color: #ccc; font-size: 0.8rem;" data-i18n="article_tip_text">create an account on a <strong>business email</strong>, enable <strong>two-factor authentication</strong>, and <strong>don't violate the rules</strong>. This will reduce the risk of being banned.</span>
+            <strong style="color: #f39c12;" id="article_tip_label">💡 Tip:</strong>
+            <span style="color: #ccc; font-size: 0.8rem;" id="article_tip_text">create an account on a <strong>business email</strong>, enable <strong>two-factor authentication</strong>, and <strong>don't violate the rules</strong>. This will reduce the risk of being banned.</span>
         </div>
-        <p style="color: #bbb; font-size: 0.85rem;" data-i18n="article_p3"><strong>Remember:</strong> if you run a business — don't keep everything in one account. Create <strong>multiple profiles</strong>, use <strong>Business Manager</strong>, and make <strong>backups of your client base</strong>.</p>
+        <p style="color: #bbb; font-size: 0.85rem;" id="article_p3"><strong>Remember:</strong> if you run a business — don't keep everything in one account. Create <strong>multiple profiles</strong>, use <strong>Business Manager</strong>, and make <strong>backups of your client base</strong>.</p>
     </div>
 
     <!-- ====== КНОПКА ТЕЛЕГРАМ ====== -->
-    <a href="https://t.me/SMM_Promotion" target="_blank" class="btn-tg" data-i18n="tg_button">
+    <a href="https://t.me/SMM_Promotion" target="_blank" class="btn-tg" id="tg_button">
         📩 Contact us on Telegram (promotion help)
     </a>
 
     <!-- ====== ПІДВАЛ СОЦМЕРЕЖ ====== -->
     <div class="footer-socials">
-        <div class="label" data-i18n="social_label">▸ OUR SOCIAL MEDIA ◂</div>
+        <div class="label" id="social_label">▸ OUR SOCIAL MEDIA ◂</div>
         <div class="social-grid">
             <a href="https://www.tiktok.com/@metaimperiya" target="_blank" class="social-card">
                 <span class="s-icon">🎵</span>
@@ -450,15 +402,6 @@
         <span>appeal form</span>
         <span>help center</span>
         <span>disabled appeal</span>
-        <span>Facebook account recovery</span>
-        <span>how to unblock Facebook</span>
-        <span>recover Facebook account</span>
-        <span>Facebook account disabled fix</span>
-        <span>Facebook locked me out</span>
-        <span>unlock Facebook without phone</span>
-        <span>Facebook support contact</span>
-        <span>appeal form</span>
-        <span>help center recovery</span>
         <span>my Facebook account is disabled</span>
         <span>what to do if Facebook disabled my account</span>
     </div>
@@ -471,7 +414,7 @@
 </div>
 
 <script>
-    // ====== ПЕРЕКЛАДИ ======
+    // ====== ПЕРЕКЛАДИ (ВСІ 23 МОВИ) ======
     const translations = {
         en: {
             title: "Facebook Account Recovery",
@@ -1339,23 +1282,76 @@
         }
     };
 
-    // ====== ЗАВАНТАЖЕННЯ МОВИ ======
-    let currentLang = 'en';
+    // ====== ВИЗНАЧЕННЯ МОВИ ======
+    function getLanguage() {
+        // 1. Перевіряємо збережену мову в localStorage
+        const savedLang = localStorage.getItem('preferredLang');
+        if (savedLang && translations[savedLang]) {
+            return savedLang;
+        }
 
-    function setLanguage(lang) {
-        if (!translations[lang]) return;
-        currentLang = lang;
+        // 2. Визначаємо за браузером
+        const browserLang = navigator.language.split('-')[0];
+        if (translations[browserLang]) {
+            return browserLang;
+        }
+
+        // 3. За замовчуванням — англійська
+        return 'en';
+    }
+
+    // ====== ЗАСТОСУВАННЯ ПЕРЕКЛАДУ ======
+    function applyLanguage(lang) {
         const t = translations[lang];
-        
-        // Оновлюємо всі елементи з data-i18n
-        document.querySelectorAll('[data-i18n]').forEach(el => {
-            const key = el.getAttribute('data-i18n');
-            if (t[key] !== undefined) {
-                if (key === 'step1_text' || key === 'step2_text' || key === 'step3_text' || key === 'step4_text' || key === 'step5_text' || 
-                    key === 'article_p1' || key === 'article_p2' || key === 'article_p3' || key === 'article_tip_text') {
-                    el.innerHTML = t[key];
+        if (!t) return;
+
+        // Оновлюємо всі елементи з id
+        const elements = {
+            'title': t.title,
+            'subtitle': t.subtitle,
+            'step1_title': t.step1_title,
+            'step1_text': t.step1_text,
+            'step1_tip': t.step1_tip,
+            'step2_title': t.step2_title,
+            'step2_text': t.step2_text,
+            'step2_li1': t.step2_li1,
+            'step2_li2': t.step2_li2,
+            'step2_li3': t.step2_li3,
+            'step2_tip': t.step2_tip,
+            'step3_title': t.step3_title,
+            'step3_text': t.step3_text,
+            'step3_li1': t.step3_li1,
+            'step3_li2': t.step3_li2,
+            'step3_li3': t.step3_li3,
+            'step4_title': t.step4_title,
+            'step4_text': t.step4_text,
+            'step4_text2': t.step4_text2,
+            'step4_tip': t.step4_tip,
+            'step5_title': t.step5_title,
+            'step5_text': t.step5_text,
+            'step5_text2': t.step5_text2,
+            'step5_li1': t.step5_li1,
+            'step5_li2': t.step5_li2,
+            'step5_li3': t.step5_li3,
+            'article_title': t.article_title,
+            'article_p1': t.article_p1,
+            'article_p2': t.article_p2,
+            'article_tip_label': t.article_tip_label,
+            'article_tip_text': t.article_tip_text,
+            'article_p3': t.article_p3,
+            'tg_button': t.tg_button,
+            'social_label': t.social_label
+        };
+
+        Object.keys(elements).forEach(id => {
+            const el = document.getElementById(id);
+            if (el) {
+                if (id === 'step1_text' || id === 'step2_text' || id === 'step3_text' || id === 'step4_text' || id === 'step5_text' ||
+                    id === 'step4_text2' || id === 'step5_text' || id === 'step5_text2' ||
+                    id === 'article_p1' || id === 'article_p2' || id === 'article_p3' || id === 'article_tip_text') {
+                    el.innerHTML = elements[id];
                 } else {
-                    el.textContent = t[key];
+                    el.textContent = elements[id];
                 }
             }
         });
@@ -1363,69 +1359,43 @@
         // Оновлюємо бігучу строку
         const marqueeText = document.getElementById('marqueeText');
         if (marqueeText) {
-            const msgs = [
-                '🔥 Facebook Recovery Guide · How to unblock Facebook · Recover account · Account disabled fix · Appeal form · Help center',
-                '🔥 Guía de recuperación de Facebook · Cómo desbloquear Facebook · Recuperar cuenta · Apelación',
-                '🔥 Guia de recuperação do Facebook · Como desbloquear o Facebook · Recuperar conta',
-                '🔥 دليل استعادة Facebook · كيفية إلغاء حظر Facebook · استعادة الحساب',
-                '🔥 फेसबुक रिकवरी गाइड · फेसबुक अनब्लॉक कैसे करें · खाता पुनर्प्राप्त करें',
-                '🔥 Guide de récupération Facebook · Comment débloquer Facebook · Récupérer un compte',
-                '🔥 Facebook-Wiederherstellung · So entsperren Sie Facebook · Konto wiederherstellen',
-                '🔥 Panduan Pemulihan Facebook · Cara membuka blokir Facebook · Pulihkan akun',
-                '🔥 Facebook Kurtarma Rehberi · Facebook nasıl açılır · Hesap kurtarma',
-                '🔥 Guida al recupero di Facebook · Come sbloccare Facebook · Recuperare account',
-                '🔥 Восстановление Facebook · Как разблокировать Facebook · Восстановить аккаунт',
-                '🔥 Відновлення Facebook · Як розблокувати Facebook · Відновити аккаунт',
-                '🔥 Przewodnik odzyskiwania Facebook · Jak odblokować Facebook · Odzyskać konto',
-                '🔥 Facebook-herstelgids · Hoe Facebook te ontgrendelen · Account herstellen',
-                '🔥 Facebook復旧ガイド · Facebookのロックを解除する方法 · アカウントを復元',
-                '🔥 Facebook 복구 가이드 · Facebook 잠금 해제 방법 · 계정 복구',
-                '🔥 Facebook恢复指南 · 如何解锁Facebook · 恢复账户',
-                '🔥 Facebook পুনরুদ্ধার গাইড · Facebook আনলক কিভাবে করবেন · অ্যাকাউন্ট পুনরুদ্ধার',
-                '🔥 Facebook بازیابی گائیڈ · Facebook کو کیسے انلاک کریں · اکاؤنٹ بحال کریں',
-                '🔥 Hướng dẫn khôi phục Facebook · Cách mở khóa Facebook · Khôi phục tài khoản',
-                '🔥 คู่มือการกู้คืน Facebook · วิธีปลดล็อก Facebook · กู้คืนบัญชี',
-                '🔥 Gabay sa Pagbawi ng Facebook · Paano i-unlock ang Facebook · I-recover ang account',
-                '🔥 راهنمای بازیابی فیسبوک · چگونه فیسبوک را باز کنیم · بازیابی حساب'
-            ];
-            const langMap = { en:0, es:1, pt:2, ar:3, hi:4, fr:5, de:6, id:7, tr:8, it:9, ru:10, uk:11, pl:12, nl:13, ja:14, ko:15, zh:16, bn:17, ur:18, vi:19, th:20, tl:21, fa:22, ms:23 };
-            const idx = langMap[lang] || 0;
-            marqueeText.textContent = msgs[idx] || msgs[0];
+            const msgs = {
+                'en': '🔥 Facebook Recovery Guide · How to unblock Facebook · Recover account · Account disabled fix · Appeal form · Help center',
+                'es': '🔥 Guía de recuperación de Facebook · Cómo desbloquear Facebook · Recuperar cuenta · Apelación',
+                'pt': '🔥 Guia de recuperação do Facebook · Como desbloquear o Facebook · Recuperar conta',
+                'ar': '🔥 دليل استعادة Facebook · كيفية إلغاء حظر Facebook · استعادة الحساب',
+                'hi': '🔥 फेसबुक रिकवरी गाइड · फेसबुक अनब्लॉक कैसे करें · खाता पुनर्प्राप्त करें',
+                'fr': '🔥 Guide de récupération Facebook · Comment débloquer Facebook · Récupérer un compte',
+                'de': '🔥 Facebook-Wiederherstellung · So entsperren Sie Facebook · Konto wiederherstellen',
+                'id': '🔥 Panduan Pemulihan Facebook · Cara membuka blokir Facebook · Pulihkan akun',
+                'tr': '🔥 Facebook Kurtarma Rehberi · Facebook nasıl açılır · Hesap kurtarma',
+                'it': '🔥 Guida al recupero di Facebook · Come sbloccare Facebook · Recuperare account',
+                'ru': '🔥 Восстановление Facebook · Как разблокировать Facebook · Восстановить аккаунт',
+                'uk': '🔥 Відновлення Facebook · Як розблокувати Facebook · Відновити аккаунт',
+                'pl': '🔥 Przewodnik odzyskiwania Facebook · Jak odblokować Facebook · Odzyskać konto',
+                'nl': '🔥 Facebook-herstelgids · Hoe Facebook te ontgrendelen · Account herstellen',
+                'ja': '🔥 Facebook復旧ガイド · Facebookのロックを解除する方法 · アカウントを復元',
+                'ko': '🔥 Facebook 복구 가이드 · Facebook 잠금 해제 방법 · 계정 복구',
+                'zh': '🔥 Facebook恢复指南 · 如何解锁Facebook · 恢复账户',
+                'bn': '🔥 Facebook পুনরুদ্ধার গাইড · Facebook আনলক কিভাবে করবেন · অ্যাকাউন্ট পুনরুদ্ধার',
+                'ur': '🔥 Facebook بازیابی گائیڈ · Facebook کو کیسے انلاک کریں · اکاؤنٹ بحال کریں',
+                'vi': '🔥 Hướng dẫn khôi phục Facebook · Cách mở khóa Facebook · Khôi phục tài khoản',
+                'th': '🔥 คู่มือการกู้คืน Facebook · วิธีปลดล็อก Facebook · กู้คืนบัญชี',
+                'tl': '🔥 Gabay sa Pagbawi ng Facebook · Paano i-unlock ang Facebook · I-recover ang account',
+                'fa': '🔥 راهنمای بازیابی فیسبوک · چگونه فیسبوک را باز کنیم · بازیابی حساب',
+                'ms': '🔥 Panduan Pemulihan Facebook · Cara membuka kunci Facebook · Pulihkan akaun'
+            };
+            marqueeText.textContent = msgs[lang] || msgs['en'];
         }
-
-        // Оновлюємо кнопки мови
-        document.querySelectorAll('.lang-btn').forEach(btn => {
-            btn.classList.toggle('active', btn.dataset.lang === lang);
-        });
 
         // Зберігаємо вибір
         localStorage.setItem('preferredLang', lang);
     }
 
-    // ====== ОБРОБНИК КНОПОК ======
-    document.querySelectorAll('.lang-btn').forEach(btn => {
-        btn.addEventListener('click', function() {
-            setLanguage(this.dataset.lang);
-        });
-    });
-
-    // ====== АВТОМАТИЧНЕ ВИЗНАЧЕННЯ МОВИ ======
+    // ====== ЗАПУСК ПРИ ЗАВАНТАЖЕННІ ======
     document.addEventListener('DOMContentLoaded', function() {
-        // Спроба завантажити збережену мову
-        const savedLang = localStorage.getItem('preferredLang');
-        if (savedLang && translations[savedLang]) {
-            setLanguage(savedLang);
-            return;
-        }
-
-        // Визначення за браузером
-        const browserLang = navigator.language.split('-')[0];
-        const availableLangs = Object.keys(translations);
-        if (availableLangs.includes(browserLang)) {
-            setLanguage(browserLang);
-        } else {
-            setLanguage('en'); // за замовчуванням
-        }
+        const lang = getLanguage();
+        applyLanguage(lang);
     });
 
     // ====== АККОРДЕОН ======
