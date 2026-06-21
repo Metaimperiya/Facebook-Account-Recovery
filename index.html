@@ -1,0 +1,1442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes">
+
+    <!-- ====== ФАВІКОН ====== -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌍</text></svg>">
+
+    <!-- ====== SEO ====== -->
+    <title>Facebook Account Recovery — Multi-Language Guide</title>
+    <meta name="description" content="Step-by-step guide to recover your Facebook account in 23 languages.">
+    <meta name="keywords" content="Facebook recovery, unblock Facebook, account disabled, appeal form, help center">
+    <link rel="canonical" href="https://facebook-recovery.vercel.app/">
+
+    <meta property="og:title" content="Facebook Account Recovery — Multi-Language Guide">
+    <meta property="og:description" content="Step-by-step guide to recover your Facebook account in 23 languages.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://raw.githubusercontent.com/Metaimperiya/Facebook-Recovery/main/preview.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <!-- ====== СТИЛІ ====== -->
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: #0a0a0a;
+            color: #fff;
+            padding: 12px;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 480px;
+            width: 100%;
+            background: #141414;
+            padding: 20px 16px 30px;
+            border-radius: 24px;
+            border: 1px solid #2a2a2a;
+        }
+
+        /* ====== ВИБІР МОВИ ====== */
+        .lang-selector {
+            display: flex;
+            gap: 6px;
+            flex-wrap: wrap;
+            margin-bottom: 16px;
+            justify-content: center;
+        }
+        .lang-btn {
+            background: #1a1a1a;
+            border: 1px solid #2a2a2a;
+            color: #888;
+            padding: 4px 10px;
+            border-radius: 40px;
+            font-size: 0.6rem;
+            cursor: pointer;
+            transition: 0.3s;
+            font-weight: 600;
+        }
+        .lang-btn.active {
+            background: #1877f2;
+            color: #fff;
+            border-color: #1877f2;
+        }
+        .lang-btn:hover { border-color: #1877f2; }
+
+        /* ====== ШАПКА ====== */
+        .header { text-align: center; padding-bottom: 16px; border-bottom: 2px solid #1877f2; margin-bottom: 16px; }
+        .header .logo { font-size: 2.8rem; display: block; margin-bottom: 4px; }
+        .header h1 { font-size: 1.6rem; color: #1877f2; line-height: 1.2; }
+        .header .sub { font-size: 0.85rem; color: #888; margin-top: 4px; }
+
+        /* ====== БІГУЧА СТРОКА ====== */
+        .marquee-wrap {
+            background: #1a1a1a;
+            border-radius: 12px;
+            overflow: hidden;
+            margin-bottom: 16px;
+            border: 1px solid #2a2a2a;
+        }
+        .marquee {
+            padding: 10px 0;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+        .marquee span {
+            display: inline-block;
+            animation: scroll 22s linear infinite;
+            font-size: 0.8rem;
+            color: #1877f2;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+        }
+        .marquee span i { margin: 0 20px; color: #555; }
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* ====== АККОРДЕОН ====== */
+        .accordion-item {
+            background: #1a1a1a;
+            border-radius: 14px;
+            margin-bottom: 10px;
+            border: 1px solid #2a2a2a;
+            overflow: hidden;
+        }
+        .accordion-btn {
+            width: 100%;
+            background: transparent;
+            border: none;
+            padding: 14px 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: #fff;
+            font-size: 0.95rem;
+            font-weight: 600;
+            cursor: pointer;
+            text-align: left;
+        }
+        .accordion-btn .icon { color: #1877f2; margin-right: 10px; }
+        .accordion-btn .arrow { color: #555; transition: 0.3s; font-size: 1.1rem; }
+        .accordion-item.active .accordion-btn .arrow { transform: rotate(180deg); }
+        .accordion-content {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease;
+            padding: 0 16px;
+        }
+        .accordion-item.active .accordion-content {
+            max-height: 600px;
+            padding: 0 16px 16px 16px;
+        }
+        .accordion-content p {
+            color: #bbb;
+            font-size: 0.85rem;
+            line-height: 1.6;
+            margin-bottom: 8px;
+        }
+        .accordion-content ul {
+            padding-left: 18px;
+            margin: 6px 0;
+        }
+        .accordion-content ul li {
+            color: #aaa;
+            font-size: 0.8rem;
+            margin-bottom: 4px;
+        }
+        .accordion-content .highlight {
+            background: #111;
+            border-left: 3px solid #f39c12;
+            padding: 8px 12px;
+            border-radius: 8px;
+            font-size: 0.8rem;
+            color: #ccc;
+            margin: 8px 0;
+        }
+
+        /* ====== КНОПКА ТЕЛЕГРАМ ====== */
+        .btn-tg {
+            display: block;
+            background: #0088cc;
+            color: #fff;
+            text-align: center;
+            padding: 14px;
+            border-radius: 40px;
+            font-weight: 700;
+            font-size: 1rem;
+            text-decoration: none;
+            margin: 16px 0;
+        }
+
+        /* ====== СОЦМЕРЕЖІ ====== */
+        .footer-socials {
+            margin-top: 16px;
+            padding-top: 16px;
+            border-top: 1px solid #2a2a2a;
+        }
+        .footer-socials .label {
+            text-align: center;
+            color: #666;
+            font-size: 0.7rem;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+        .social-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+        .social-card {
+            background: #1a1a1a;
+            border-radius: 14px;
+            padding: 10px 14px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            text-decoration: none;
+            color: #fff;
+            border: 1px solid #2a2a2a;
+        }
+        .social-card .s-icon { font-size: 1.8rem; width: 40px; text-align: center; flex-shrink: 0; }
+        .social-card .s-info { flex: 1; }
+        .social-card .s-info .s-title { font-weight: 600; font-size: 0.9rem; }
+        .social-card .s-info .s-desc { font-size: 0.65rem; color: #888; }
+        .social-card .s-arrow { color: #555; }
+
+        /* ====== КЛЮЧОВІ СЛОВА ====== */
+        .keywords-block {
+            background: #111;
+            padding: 12px 14px;
+            border-radius: 14px;
+            margin-top: 14px;
+            border: 1px solid #2a2a2a;
+        }
+        .keywords-block strong {
+            display: block;
+            font-size: 0.75rem;
+            color: #888;
+            margin-bottom: 6px;
+        }
+        .keywords-block span {
+            display: inline-block;
+            background: #1a1a1a;
+            padding: 3px 10px;
+            border-radius: 40px;
+            font-size: 0.6rem;
+            color: #1877f2;
+            margin: 2px 3px 2px 0;
+            border: 1px solid #2a2a2a;
+        }
+
+        /* ====== ФУТЕР ====== */
+        .footer-text {
+            text-align: center;
+            color: #444;
+            font-size: 0.6rem;
+            margin-top: 12px;
+            letter-spacing: 0.3px;
+        }
+
+        /* ====== АДАПТИВ ====== */
+        @media (max-width: 400px) {
+            .container { padding: 14px 10px 20px; }
+            .header h1 { font-size: 1.3rem; }
+            .accordion-btn { font-size: 0.85rem; padding: 12px; }
+        }
+        @media (min-width: 600px) {
+            body { padding: 20px; align-items: center; }
+            .container { max-width: 520px; padding: 30px 28px; }
+            .social-grid { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+            .social-card { flex: 1; min-width: 120px; flex-direction: column; text-align: center; padding: 14px 10px; }
+            .social-card .s-icon { width: auto; font-size: 2.2rem; }
+            .social-card .s-arrow { display: none; }
+            .lang-btn { font-size: 0.7rem; padding: 5px 14px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <!-- ====== ВИБІР МОВИ ====== -->
+    <div class="lang-selector" id="langSelector">
+        <button class="lang-btn active" data-lang="en">🇬🇧 EN</button>
+        <button class="lang-btn" data-lang="es">🇪🇸 ES</button>
+        <button class="lang-btn" data-lang="pt">🇵🇹 PT</button>
+        <button class="lang-btn" data-lang="ar">🇸🇦 AR</button>
+        <button class="lang-btn" data-lang="hi">🇮🇳 HI</button>
+        <button class="lang-btn" data-lang="fr">🇫🇷 FR</button>
+        <button class="lang-btn" data-lang="de">🇩🇪 DE</button>
+        <button class="lang-btn" data-lang="id">🇮🇩 ID</button>
+        <button class="lang-btn" data-lang="tr">🇹🇷 TR</button>
+        <button class="lang-btn" data-lang="it">🇮🇹 IT</button>
+        <button class="lang-btn" data-lang="ru">🇷🇺 RU</button>
+        <button class="lang-btn" data-lang="uk">🇺🇦 UK</button>
+        <button class="lang-btn" data-lang="pl">🇵🇱 PL</button>
+        <button class="lang-btn" data-lang="nl">🇳🇱 NL</button>
+        <button class="lang-btn" data-lang="ja">🇯🇵 JA</button>
+        <button class="lang-btn" data-lang="ko">🇰🇷 KO</button>
+        <button class="lang-btn" data-lang="zh">🇨🇳 ZH</button>
+        <button class="lang-btn" data-lang="bn">🇧🇩 BN</button>
+        <button class="lang-btn" data-lang="ur">🇵🇰 UR</button>
+        <button class="lang-btn" data-lang="vi">🇻🇳 VI</button>
+        <button class="lang-btn" data-lang="th">🇹🇭 TH</button>
+        <button class="lang-btn" data-lang="tl">🇵🇭 TL</button>
+        <button class="lang-btn" data-lang="fa">🇮🇷 FA</button>
+        <button class="lang-btn" data-lang="ms">🇲🇾 MS</button>
+    </div>
+
+    <!-- ====== ШАПКА ====== -->
+    <div class="header">
+        <span class="logo">🌍</span>
+        <h1 data-i18n="title">Facebook Account Recovery</h1>
+        <div class="sub" data-i18n="subtitle">Step-by-step guide to recover your disabled account</div>
+    </div>
+
+    <!-- ====== БІГУЧА СТРОКА ====== -->
+    <div class="marquee-wrap">
+        <div class="marquee">
+            <span id="marqueeText">
+                🔥 Facebook Recovery Guide &nbsp;<i>•</i>&nbsp; How to unblock Facebook &nbsp;<i>•</i>&nbsp; Recover account &nbsp;<i>•</i>&nbsp; Account disabled fix &nbsp;<i>•</i>&nbsp; Appeal form &nbsp;<i>•</i>&nbsp; Help center
+            </span>
+        </div>
+    </div>
+
+    <!-- ====== АККОРДЕОН ====== -->
+    <div id="accordionContainer">
+        <!-- Пункт 1 -->
+        <div class="accordion-item active">
+            <button class="accordion-btn">
+                <span><span class="icon">📧</span> <span data-i18n="step1_title">1. Check Email & Notifications</span></span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+                <p data-i18n="step1_text">Facebook usually sends a reason for the ban to <strong>security@facebookmail.com</strong> or in the notification tab. Check your Spam folder — sometimes emails end up there. If there's no email, the ban was automatic without explanation.</p>
+                <div class="highlight" data-i18n="step1_tip">💡 Tip: Add Facebook email to your white list to avoid missing important messages.</div>
+            </div>
+        </div>
+
+        <!-- Пункт 2 -->
+        <div class="accordion-item">
+            <button class="accordion-btn">
+                <span><span class="icon">📝</span> <span data-i18n="step2_title">2. Submit an Appeal</span></span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+                <p data-i18n="step2_text">Fill out the <strong>Facebook Appeal Form</strong> with your real data. Attach your ID if requested. Be concise and honest — algorithms don't read long texts. Say: "My account was blocked by mistake, I didn't violate rules."</p>
+                <ul>
+                    <li data-i18n="step2_li1">Use the <strong>real name</strong> from your account</li>
+                    <li data-i18n="step2_li2">Attach a photo of your <strong>passport or ID</strong> if requested</li>
+                    <li data-i18n="step2_li3">Submit the appeal <strong>multiple times</strong> from different browsers</li>
+                </ul>
+                <div class="highlight" data-i18n="step2_tip">⚠️ If the "Submit" button doesn't work — try a different browser or clear your cache.</div>
+            </div>
+        </div>
+
+        <!-- Пункт 3 -->
+        <div class="accordion-item">
+            <button class="accordion-btn">
+                <span><span class="icon">💼</span> <span data-i18n="step3_title">3. Contact Business Manager Support</span></span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+                <p data-i18n="step3_text">If you have a <strong>Business Manager</strong> — contact support from there. They respond faster. Business Manager gives access to <strong>live chat support</strong>, unlike regular users.</p>
+                <ul>
+                    <li data-i18n="step3_li1">Go to Business Manager → Help → Contact Support</li>
+                    <li data-i18n="step3_li2">Choose <strong>chat or email</strong></li>
+                    <li data-i18n="step3_li3">Describe the problem and add your account ID</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Пункт 4 -->
+        <div class="accordion-item">
+            <button class="accordion-btn">
+                <span><span class="icon">✉️</span> <span data-i18n="step4_title">4. Email Facebook Directly</span></span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+                <p data-i18n="step4_text">Try these emails:</p>
+                <ul>
+                    <li><strong>disabled@facebook.com</strong></li>
+                    <li><strong>appeals@facebook.com</strong></li>
+                    <li><strong>support@facebook.com</strong></li>
+                </ul>
+                <p data-i18n="step4_text2">Include: <strong>your name, account email, page ID</strong> and briefly describe the situation. Attach a photo of your ID if available.</p>
+                <div class="highlight" data-i18n="step4_tip">⚠️ The chance of a reply is very low, but it's worth trying. Sometimes automated responses arrive after 2-3 weeks.</div>
+            </div>
+        </div>
+
+        <!-- Пункт 5 -->
+        <div class="accordion-item">
+            <button class="accordion-btn">
+                <span><span class="icon">🚫</span> <span data-i18n="step5_title">5. Don't Fall for Scammers</span></span>
+                <span class="arrow">▼</span>
+            </button>
+            <div class="accordion-content">
+                <p data-i18n="step5_text"><strong>⚠️ Nobody can unlock Facebook for $50.</strong></p>
+                <p data-i18n="step5_text2">If "specialists" promise to unlock your account for money — they are <strong>scammers</strong>. They will take your money and disappear, or worse — block you again.</p>
+                <ul>
+                    <li data-i18n="step5_li1">Never share your <strong>passwords</strong> with anyone</li>
+                    <li data-i18n="step5_li2">Don't click on <strong>suspicious links</strong></li>
+                    <li data-i18n="step5_li3">Remember: <strong>Facebook support is always free</strong></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- ====== СТАТТЯ ====== -->
+    <div style="margin-top: 16px; background: #1a1a1a; border-radius: 16px; padding: 16px; border: 1px solid #2a2a2a;">
+        <h2 style="font-size: 1.1rem; color: #fff; margin-bottom: 8px;" data-i18n="article_title">📌 In any case — prepare a new account</h2>
+        <p style="color: #bbb; font-size: 0.85rem; margin-bottom: 8px;" data-i18n="article_p1"><strong>Reality is:</strong> even if you submit an appeal and contact support — <strong>the chance of unblocking is minimal</strong>. Algorithms don't listen, support doesn't respond, there are no real people inside Facebook.</p>
+        <p style="color: #bbb; font-size: 0.85rem; margin-bottom: 8px;" data-i18n="article_p2">Therefore, the <strong>only working solution</strong> is to create a new account and start from scratch. Yes, it hurts. Yes, it's unfair. But that's <strong>reality</strong>.</p>
+        <div style="background: #111; border-left: 3px solid #f39c12; padding: 10px 14px; border-radius: 10px; margin: 8px 0;">
+            <strong style="color: #f39c12;" data-i18n="article_tip_label">💡 Tip:</strong>
+            <span style="color: #ccc; font-size: 0.8rem;" data-i18n="article_tip_text">create an account on a <strong>business email</strong>, enable <strong>two-factor authentication</strong>, and <strong>don't violate the rules</strong>. This will reduce the risk of being banned.</span>
+        </div>
+        <p style="color: #bbb; font-size: 0.85rem;" data-i18n="article_p3"><strong>Remember:</strong> if you run a business — don't keep everything in one account. Create <strong>multiple profiles</strong>, use <strong>Business Manager</strong>, and make <strong>backups of your client base</strong>.</p>
+    </div>
+
+    <!-- ====== КНОПКА ТЕЛЕГРАМ ====== -->
+    <a href="https://t.me/SMM_Promotion" target="_blank" class="btn-tg" data-i18n="tg_button">
+        📩 Contact us on Telegram (promotion help)
+    </a>
+
+    <!-- ====== ПІДВАЛ СОЦМЕРЕЖ ====== -->
+    <div class="footer-socials">
+        <div class="label" data-i18n="social_label">▸ OUR SOCIAL MEDIA ◂</div>
+        <div class="social-grid">
+            <a href="https://www.tiktok.com/@metaimperiya" target="_blank" class="social-card">
+                <span class="s-icon">🎵</span>
+                <span class="s-info">
+                    <span class="s-title">TikTok</span>
+                    <span class="s-desc">@metaimperiya</span>
+                </span>
+                <span class="s-arrow">›</span>
+            </a>
+            <a href="https://l.likee.video/v/nfUFbf" target="_blank" class="social-card">
+                <span class="s-icon">🎬</span>
+                <span class="s-info">
+                    <span class="s-title">Likee</span>
+                    <span class="s-desc">Creative videos</span>
+                </span>
+                <span class="s-arrow">›</span>
+            </a>
+            <a href="https://www.youtube.com/@METAIPMERIYA" target="_blank" class="social-card">
+                <span class="s-icon">▶️</span>
+                <span class="s-info">
+                    <span class="s-title">YouTube</span>
+                    <span class="s-desc">@METAIPMERIYA</span>
+                </span>
+                <span class="s-arrow">›</span>
+            </a>
+        </div>
+    </div>
+
+    <!-- ====== КЛЮЧОВІ СЛОВА ====== -->
+    <div class="keywords-block">
+        <strong>🔑 SEO Keywords:</strong>
+        <span>facebook account recovery</span>
+        <span>how to unblock facebook</span>
+        <span>recover facebook account</span>
+        <span>account disabled fix</span>
+        <span>facebook locked me out</span>
+        <span>unlock facebook without phone</span>
+        <span>appeal form</span>
+        <span>help center</span>
+        <span>disabled appeal</span>
+        <span>Facebook account recovery</span>
+        <span>how to unblock Facebook</span>
+        <span>recover Facebook account</span>
+        <span>Facebook account disabled fix</span>
+        <span>Facebook locked me out</span>
+        <span>unlock Facebook without phone</span>
+        <span>Facebook support contact</span>
+        <span>appeal form</span>
+        <span>help center recovery</span>
+        <span>my Facebook account is disabled</span>
+        <span>what to do if Facebook disabled my account</span>
+    </div>
+
+    <!-- ====== ФУТЕР ====== -->
+    <div class="footer-text">
+        🌍 Facebook Account Recovery · Multi-Language · 2025
+    </div>
+
+</div>
+
+<script>
+    // ====== ПЕРЕКЛАДИ ======
+    const translations = {
+        en: {
+            title: "Facebook Account Recovery",
+            subtitle: "Step-by-step guide to recover your disabled account",
+            step1_title: "1. Check Email & Notifications",
+            step1_text: 'Facebook usually sends a reason for the ban to <strong>security@facebookmail.com</strong> or in the notification tab. Check your Spam folder — sometimes emails end up there. If there\'s no email, the ban was automatic without explanation.',
+            step1_tip: '💡 Tip: Add Facebook email to your white list to avoid missing important messages.',
+            step2_title: "2. Submit an Appeal",
+            step2_text: 'Fill out the <strong>Facebook Appeal Form</strong> with your real data. Attach your ID if requested. Be concise and honest — algorithms don\'t read long texts. Say: "My account was blocked by mistake, I didn\'t violate rules."',
+            step2_li1: 'Use the <strong>real name</strong> from your account',
+            step2_li2: 'Attach a photo of your <strong>passport or ID</strong> if requested',
+            step2_li3: 'Submit the appeal <strong>multiple times</strong> from different browsers',
+            step2_tip: '⚠️ If the "Submit" button doesn\'t work — try a different browser or clear your cache.',
+            step3_title: "3. Contact Business Manager Support",
+            step3_text: 'If you have a <strong>Business Manager</strong> — contact support from there. They respond faster. Business Manager gives access to <strong>live chat support</strong>, unlike regular users.',
+            step3_li1: 'Go to Business Manager → Help → Contact Support',
+            step3_li2: 'Choose <strong>chat or email</strong>',
+            step3_li3: 'Describe the problem and add your account ID',
+            step4_title: "4. Email Facebook Directly",
+            step4_text: 'Try these emails:',
+            step4_text2: 'Include: <strong>your name, account email, page ID</strong> and briefly describe the situation. Attach a photo of your ID if available.',
+            step4_tip: '⚠️ The chance of a reply is very low, but it\'s worth trying. Sometimes automated responses arrive after 2-3 weeks.',
+            step5_title: "5. Don't Fall for Scammers",
+            step5_text: '<strong>⚠️ Nobody can unlock Facebook for $50.</strong>',
+            step5_text2: 'If "specialists" promise to unlock your account for money — they are <strong>scammers</strong>. They will take your money and disappear, or worse — block you again.',
+            step5_li1: 'Never share your <strong>passwords</strong> with anyone',
+            step5_li2: 'Don\'t click on <strong>suspicious links</strong>',
+            step5_li3: 'Remember: <strong>Facebook support is always free</strong>',
+            article_title: '📌 In any case — prepare a new account',
+            article_p1: '<strong>Reality is:</strong> even if you submit an appeal and contact support — <strong>the chance of unblocking is minimal</strong>. Algorithms don\'t listen, support doesn\'t respond, there are no real people inside Facebook.',
+            article_p2: 'Therefore, the <strong>only working solution</strong> is to create a new account and start from scratch. Yes, it hurts. Yes, it\'s unfair. But that\'s <strong>reality</strong>.',
+            article_tip_label: '💡 Tip:',
+            article_tip_text: 'create an account on a <strong>business email</strong>, enable <strong>two-factor authentication</strong>, and <strong>don\'t violate the rules</strong>. This will reduce the risk of being banned.',
+            article_p3: '<strong>Remember:</strong> if you run a business — don\'t keep everything in one account. Create <strong>multiple profiles</strong>, use <strong>Business Manager</strong>, and make <strong>backups of your client base</strong>.',
+            tg_button: '📩 Contact us on Telegram (promotion help)',
+            social_label: '▸ OUR SOCIAL MEDIA ◂'
+        },
+        es: {
+            title: "Recuperación de cuenta de Facebook",
+            subtitle: "Guía paso a paso para recuperar tu cuenta desactivada",
+            step1_title: "1. Revisa tu correo y notificaciones",
+            step1_text: 'Facebook suele enviar el motivo del bloqueo a <strong>security@facebookmail.com</strong> o en la pestaña de notificaciones. Revisa la carpeta de Spam — a veces los correos llegan allí. Si no hay correo, el bloqueo fue automático sin explicación.',
+            step1_tip: '💡 Consejo: añade el correo de Facebook a tu lista blanca para no perderte mensajes importantes.',
+            step2_title: "2. Presenta una apelación",
+            step2_text: 'Rellena el <strong>Formulario de apelación de Facebook</strong> con tus datos reales. Adjunta tu identificación si te la piden. Sé conciso y honesto — los algoritmos no leen textos largos. Di: "Mi cuenta fue bloqueada por error, no violé las reglas".',
+            step2_li1: 'Usa el <strong>nombre real</strong> de tu cuenta',
+            step2_li2: 'Adjunta una foto de tu <strong>pasaporte o DNI</strong> si te lo piden',
+            step2_li3: 'Envía la apelación <strong>varias veces</strong> desde diferentes navegadores',
+            step2_tip: '⚠️ Si el botón "Enviar" no funciona — prueba con otro navegador o borra la caché.',
+            step3_title: "3. Contacta con el soporte de Business Manager",
+            step3_text: 'Si tienes un <strong>Business Manager</strong> — contacta con el soporte desde allí. Responden más rápido. Business Manager da acceso a <strong>chat en vivo con soporte</strong>, a diferencia de los usuarios normales.',
+            step3_li1: 'Ve a Business Manager → Ayuda → Contactar con soporte',
+            step3_li2: 'Elige <strong>chat o correo</strong>',
+            step3_li3: 'Describe el problema y añade el ID de tu cuenta',
+            step4_title: "4. Envía un correo directamente a Facebook",
+            step4_text: 'Prueba con estos correos:',
+            step4_text2: 'Incluye: <strong>tu nombre, correo de la cuenta, ID de la página</strong> y describe brevemente la situación. Adjunta una foto de tu identificación si tienes.',
+            step4_tip: '⚠️ La probabilidad de respuesta es muy baja, pero vale la pena intentarlo. A veces llegan respuestas automáticas después de 2-3 semanas.',
+            step5_title: "5. No caigas en estafas",
+            step5_text: '<strong>⚠️ Nadie puede desbloquear Facebook por $50.</strong>',
+            step5_text2: 'Si "especialistas" prometen desbloquear tu cuenta por dinero — son <strong>estafadores</strong>. Tomarán tu dinero y desaparecerán, o peor — te bloquearán de nuevo.',
+            step5_li1: 'Nunca compartas tus <strong>contraseñas</strong> con nadie',
+            step5_li2: 'No hagas clic en <strong>enlaces sospechosos</strong>',
+            step5_li3: 'Recuerda: <strong>el soporte de Facebook siempre es gratuito</strong>',
+            article_title: '📌 En cualquier caso — prepara una cuenta nueva',
+            article_p1: '<strong>La realidad es:</strong> incluso si presentas una apelación y contactas con soporte — <strong>la probabilidad de desbloqueo es mínima</strong>. Los algoritmos no escuchan, el soporte no responde, no hay personas reales dentro de Facebook.',
+            article_p2: 'Por lo tanto, la <strong>única solución que funciona</strong> es crear una cuenta nueva y empezar desde cero. Sí, duele. Sí, es injusto. Pero es la <strong>realidad</strong>.',
+            article_tip_label: '💡 Consejo:',
+            article_tip_text: 'crea una cuenta con un <strong>correo empresarial</strong>, activa la <strong>autenticación de dos factores</strong> y <strong>no violes las reglas</strong>. Esto reducirá el riesgo de bloqueo.',
+            article_p3: '<strong>Recuerda:</strong> si tienes un negocio — no lo tengas todo en una sola cuenta. Crea <strong>varios perfiles</strong>, usa <strong>Business Manager</strong> y haz <strong>copias de seguridad de tu base de clientes</strong>.',
+            tg_button: '📩 Contáctanos en Telegram (ayuda con promoción)',
+            social_label: '▸ NUESTRAS REDES SOCIALES ◂'
+        },
+        pt: {
+            title: "Recuperação de conta do Facebook",
+            subtitle: "Guia passo a passo para recuperar sua conta desativada",
+            step1_title: "1. Verifique seu e-mail e notificações",
+            step1_text: 'O Facebook geralmente envia o motivo do banimento para <strong>security@facebookmail.com</strong> ou na guia de notificações. Verifique sua pasta de Spam — às vezes os e-mails vão parar lá. Se não houver e-mail, o banimento foi automático sem explicação.',
+            step1_tip: '💡 Dica: adicione o e-mail do Facebook à sua lista branca para não perder mensagens importantes.',
+            step2_title: "2. Envie uma apelação",
+            step2_text: 'Preencha o <strong>Formulário de Apelação do Facebook</strong> com seus dados reais. Anexe seu documento de identidade se solicitado. Seja conciso e honesto — os algoritmos não leem textos longos. Diga: "Minha conta foi bloqueada por engano, eu não violei as regras."',
+            step2_li1: 'Use o <strong>nome real</strong> da sua conta',
+            step2_li2: 'Anexe uma foto do seu <strong>passaporte ou documento</strong> se solicitado',
+            step2_li3: 'Envie a apelação <strong>várias vezes</strong> de navegadores diferentes',
+            step2_tip: '⚠️ Se o botão "Enviar" não funcionar — tente outro navegador ou limpe o cache.',
+            step3_title: "3. Contate o suporte do Business Manager",
+            step3_text: 'Se você tem um <strong>Business Manager</strong> — contate o suporte por lá. Eles respondem mais rápido. O Business Manager dá acesso ao <strong>chat ao vivo com suporte</strong>, ao contrário dos usuários comuns.',
+            step3_li1: 'Vá para Business Manager → Ajuda → Contatar Suporte',
+            step3_li2: 'Escolha <strong>chat ou e-mail</strong>',
+            step3_li3: 'Descreva o problema e adicione o ID da sua conta',
+            step4_title: "4. Envie um e-mail diretamente para o Facebook",
+            step4_text: 'Tente estes e-mails:',
+            step4_text2: 'Inclua: <strong>seu nome, e-mail da conta, ID da página</strong> e descreva brevemente a situação. Anexe uma foto do seu documento se disponível.',
+            step4_tip: '⚠️ A chance de resposta é muito baixa, mas vale a pena tentar. Às vezes, respostas automáticas chegam após 2-3 semanas.',
+            step5_title: "5. Não caia em golpes",
+            step5_text: '<strong>⚠️ Ninguém pode desbloquear o Facebook por $50.</strong>',
+            step5_text2: 'Se "especialistas" prometem desbloquear sua conta por dinheiro — são <strong>golpistas</strong>. Eles vão pegar seu dinheiro e desaparecer, ou pior — bloquear você novamente.',
+            step5_li1: 'Nunca compartilhe suas <strong>senhas</strong> com ninguém',
+            step5_li2: 'Não clique em <strong>links suspeitos</strong>',
+            step5_li3: 'Lembre-se: <strong>o suporte do Facebook é sempre gratuito</strong>',
+            article_title: '📌 Em qualquer caso — prepare uma nova conta',
+            article_p1: '<strong>A realidade é:</strong> mesmo que você envie uma apelação e contate o suporte — <strong>a chance de desbloqueio é mínima</strong>. Os algoritmos não ouvem, o suporte não responde, não há pessoas reais dentro do Facebook.',
+            article_p2: 'Portanto, a <strong>única solução que funciona</strong> é criar uma nova conta e começar do zero. Sim, dói. Sim, é injusto. Mas essa é a <strong>realidade</strong>.',
+            article_tip_label: '💡 Dica:',
+            article_tip_text: 'crie uma conta com um <strong>e-mail comercial</strong>, ative a <strong>autenticação de dois fatores</strong> e <strong>não viole as regras</strong>. Isso reduzirá o risco de banimento.',
+            article_p3: '<strong>Lembre-se:</strong> se você tem um negócio — não mantenha tudo em uma única conta. Crie <strong>vários perfis</strong>, use <strong>Business Manager</strong> e faça <strong>backups da sua base de clientes</strong>.',
+            tg_button: '📩 Contate-nos no Telegram (ajuda com promoção)',
+            social_label: '▸ NOSSAS REDES SOCIAIS ◂'
+        },
+        ar: {
+            title: "استعادة حساب Facebook",
+            subtitle: "دليل خطوة بخطوة لاستعادة حسابك المعطل",
+            step1_title: "1. تحقق من بريدك الإلكتروني والإشعارات",
+            step1_text: 'يرسل Facebook عادةً سبب الحظر إلى <strong>security@facebookmail.com</strong> أو في علامة التبويب الإشعارات. تحقق من مجلد البريد العشوائي — أحيانًا تصل الرسائل الإلكترونية إلى هناك. إذا لم يكن هناك بريد إلكتروني، كان الحظر تلقائيًا دون تفسير.',
+            step1_tip: '💡 نصيحة: أضف بريد Facebook الإلكتروني إلى القائمة البيضاء لتجنب فقدان الرسائل المهمة.',
+            step2_title: "2. قدم استئنافًا",
+            step2_text: 'املأ <strong>نموذج استئناف Facebook</strong> ببياناتك الحقيقية. أرفق هويتك إذا طُلب منك ذلك. كن موجزًا وصادقًا — الخوارزميات لا تقرأ النصوص الطويلة. قل: "تم حظر حسابي عن طريق الخطأ، لم أخالف القواعد."',
+            step2_li1: 'استخدم <strong>الاسم الحقيقي</strong> من حسابك',
+            step2_li2: 'أرفق صورة من <strong>جواز سفرك أو هويتك</strong> إذا طُلب منك ذلك',
+            step2_li3: 'أرسل الاستئناف <strong>عدة مرات</strong> من متصفحات مختلفة',
+            step2_tip: '⚠️ إذا لم يعمل زر "إرسال" — جرب متصفحًا آخر أو امسح ذاكرة التخزين المؤقت.',
+            step3_title: "3. اتصل بدعم Business Manager",
+            step3_text: 'إذا كان لديك <strong>Business Manager</strong> — اتصل بالدعم من هناك. يستجيبون بشكل أسرع. يمنحك Business Manager الوصول إلى <strong>الدعم عبر الدردشة المباشرة</strong>، على عكس المستخدمين العاديين.',
+            step3_li1: 'اذهب إلى Business Manager → مساعدة → اتصل بالدعم',
+            step3_li2: 'اختر <strong>دردشة أو بريدًا إلكترونيًا</strong>',
+            step3_li3: 'صف المشكلة وأضف معرف حسابك',
+            step4_title: "4. أرسل بريدًا إلكترونيًا إلى Facebook مباشرة",
+            step4_text: 'جرب هذه البريدات الإلكترونية:',
+            step4_text2: 'ضمن: <strong>اسمك، بريد الحساب الإلكتروني، معرف الصفحة</strong> وصف الموقف بإيجاز. أرفق صورة من هويتك إذا كانت متوفرة.',
+            step4_tip: '⚠️ فرصة الرد منخفضة جدًا، لكن الأمر يستحق المحاولة. أحيانًا تصل ردود تلقائية بعد 2-3 أسابيع.',
+            step5_title: "5. لا تقع في فخ المحتالين",
+            step5_text: '<strong>⚠️ لا يمكن لأي شخص فتح Facebook مقابل 50 دولارًا.</strong>',
+            step5_text2: 'إذا وعد "خبراء" بفتح حسابك مقابل المال — فهم <strong>محتالون</strong>. سيأخذون أموالك ويختفون، أو الأسوأ — سيحظرونك مرة أخرى.',
+            step5_li1: 'لا تشارك <strong>كلمات المرور</strong> الخاصة بك مع أي شخص',
+            step5_li2: 'لا تنقر على <strong>روابط مشبوهة</strong>',
+            step5_li3: 'تذكر: <strong>دعم Facebook دائمًا مجاني</strong>',
+            article_title: '📌 في أي حال — جهز حسابًا جديدًا',
+            article_p1: '<strong>الحقيقة هي:</strong> حتى إذا قدمت استئنافًا وتواصلت مع الدعم — <strong>فرصة فتح الحساب ضئيلة</strong>. الخوارزميات لا تسمع، الدعم لا يرد، لا يوجد أشخاص حقيقيون داخل Facebook.',
+            article_p2: 'لذلك، <strong>الحل الوحيد الذي يعمل</strong> هو إنشاء حساب جديد والبدء من الصفر. نعم، هذا مؤلم. نعم، هذا غير عادل. ولكن هذا هو <strong>الواقع</strong>.',
+            article_tip_label: '💡 نصيحة:',
+            article_tip_text: 'أنشئ حسابًا على <strong>بريد إلكتروني تجاري</strong>، فعّل <strong>المصادقة الثنائية</strong>، و<strong>لا تخالف القواعد</strong>. هذا سيقلل من خطر الحظر.',
+            article_p3: '<strong>تذكر:</strong> إذا كنت تدير عملاً — لا تضع كل شيء في حساب واحد. أنشئ <strong>عدة ملفات شخصية</strong>، استخدم <strong>Business Manager</strong>، واعمل <strong>نسخ احتياطية لقاعدة عملائك</strong>.',
+            tg_button: '📩 اتصل بنا على تيليجرام (مساعدة في الترويج)',
+            social_label: '▸ وسائل التواصل الاجتماعي الخاصة بنا ◂'
+        },
+        hi: {
+            title: "फेसबुक अकाउंट रिकवरी",
+            subtitle: "अपने अक्षम खाते को पुनर्प्राप्त करने के लिए चरण-दर-चरण मार्गदर्शिका",
+            step1_title: "1. ईमेल और सूचनाएं जांचें",
+            step1_text: 'Facebook आमतौर पर <strong>security@facebookmail.com</strong> या सूचना टैब पर प्रतिबंध का कारण भेजता है। अपने स्पैम फ़ोल्डर की जांच करें — कभी-कभी ईमेल वहां चले जाते हैं। यदि कोई ईमेल नहीं है, तो प्रतिबंध बिना स्पष्टीकरण के स्वचालित था।',
+            step1_tip: '💡 सुझाव: महत्वपूर्ण संदेशों को खोने से बचने के लिए Facebook ईमेल को अपनी श्वेत सूची में जोड़ें।',
+            step2_title: "2. अपील दायर करें",
+            step2_text: '<strong>Facebook अपील फॉर्म</strong> को अपने वास्तविक डेटा से भरें। यदि अनुरोध किया जाए तो अपना आईडी संलग्न करें। संक्षिप्त और ईमानदार रहें — एल्गोरिदम लंबे पाठ नहीं पढ़ते हैं। कहें: "मेरा खाता गलती से ब्लॉक कर दिया गया था, मैंने नियमों का उल्लंघन नहीं किया।"',
+            step2_li1: 'अपने खाते का <strong>वास्तविक नाम</strong> उपयोग करें',
+            step2_li2: 'यदि अनुरोध किया जाए तो अपने <strong>पासपोर्ट या आईडी</strong> की फोटो संलग्न करें',
+            step2_li3: 'अपील को विभिन्न ब्राउज़रों से <strong>कई बार</strong> सबमिट करें',
+            step2_tip: '⚠️ यदि "सबमिट" बटन काम नहीं करता है — तो कोई अन्य ब्राउज़र आज़माएं या अपना कैश साफ़ करें।',
+            step3_title: "3. Business Manager सहायता से संपर्क करें",
+            step3_text: 'यदि आपके पास <strong>Business Manager</strong> है — तो वहां से सहायता से संपर्क करें। वे तेजी से जवाब देते हैं। Business Manager आपको <strong>लाइव चैट सहायता</strong> तक पहुंच प्रदान करता है, सामान्य उपयोगकर्ताओं के विपरीत।',
+            step3_li1: 'Business Manager → सहायता → सहायता से संपर्क करें पर जाएं',
+            step3_li2: '<strong>चैट या ईमेल</strong> चुनें',
+            step3_li3: 'समस्या का वर्णन करें और अपना खाता आईडी जोड़ें',
+            step4_title: "4. सीधे Facebook को ईमेल करें",
+            step4_text: 'इन ईमेल का प्रयास करें:',
+            step4_text2: 'शामिल करें: <strong>आपका नाम, खाता ईमेल, पेज आईडी</strong> और स्थिति का संक्षेप में वर्णन करें। यदि उपलब्ध हो तो अपनी आईडी की फोटो संलग्न करें।',
+            step4_tip: '⚠️ उत्तर मिलने की संभावना बहुत कम है, लेकिन प्रयास करना उचित है। कभी-कभी 2-3 सप्ताह के बाद स्वचालित प्रतिक्रियाएं आती हैं।',
+            step5_title: "5. स्कैमर्स के झांसे में न आएं",
+            step5_text: '<strong>⚠️ कोई भी $50 में Facebook अनलॉक नहीं कर सकता।</strong>',
+            step5_text2: 'यदि "विशेषज्ञ" पैसे के लिए आपका खाता अनलॉक करने का वादा करते हैं — वे <strong>स्कैमर्स</strong> हैं। वे आपके पैसे लेकर गायब हो जाएंगे, या इससे भी बदतर — आपको फिर से ब्लॉक कर देंगे।',
+            step5_li1: 'अपने <strong>पासवर्ड</strong> कभी किसी के साथ साझा न करें',
+            step5_li2: '<strong>संदिग्ध लिंक</strong> पर क्लिक न करें',
+            step5_li3: 'याद रखें: <strong>Facebook सहायता हमेशा मुफ्त है</strong>',
+            article_title: '📌 किसी भी स्थिति में — एक नया खाता तैयार करें',
+            article_p1: '<strong>वास्तविकता यह है:</strong> भले ही आप अपील दायर करें और सहायता से संपर्क करें — <strong>अनलॉक होने की संभावना न्यूनतम है</strong>। एल्गोरिदम नहीं सुनते, सहायता जवाब नहीं देती, Facebook के अंदर कोई वास्तविक लोग नहीं हैं।',
+            article_p2: 'इसलिए, <strong>एकमात्र काम करने वाला समाधान</strong> एक नया खाता बनाना और शुरू से शुरू करना है। हाँ, यह दर्द देता है। हाँ, यह अनुचित है। लेकिन यह <strong>वास्तविकता</strong> है।',
+            article_tip_label: '💡 सुझाव:',
+            article_tip_text: 'एक <strong>व्यावसायिक ईमेल</strong> पर खाता बनाएं, <strong>दो-कारक प्रमाणीकरण</strong> सक्षम करें, और <strong>नियमों का उल्लंघन न करें</strong>। इससे प्रतिबंधित होने का जोखिम कम हो जाएगा।',
+            article_p3: '<strong>याद रखें:</strong> यदि आप व्यवसाय चलाते हैं — तो सब कुछ एक खाते में न रखें। <strong>कई प्रोफाइल</strong> बनाएं, <strong>Business Manager</strong> का उपयोग करें, और अपने <strong>ग्राहक आधार का बैकअप</strong> बनाएं।',
+            tg_button: '📩 हमसे Telegram पर संपर्क करें (प्रचार सहायता)',
+            social_label: '▸ हमारे सोशल मीडिया ◂'
+        },
+        fr: {
+            title: "Récupération de compte Facebook",
+            subtitle: "Guide étape par étape pour récupérer votre compte désactivé",
+            step1_title: "1. Vérifiez vos e-mails et notifications",
+            step1_text: "Facebook envoie généralement la raison du bannissement à <strong>security@facebookmail.com</strong> ou dans l'onglet notifications. Vérifiez votre dossier Spam — parfois les e-mails y atterrissent. S'il n'y a pas d'e-mail, le bannissement était automatique sans explication.",
+            step1_tip: "💡 Astuce : ajoutez l'e-mail de Facebook à votre liste blanche pour ne pas manquer les messages importants.",
+            step2_title: "2. Soumettez un appel",
+            step2_text: "Remplissez le <strong>Formulaire d'appel de Facebook</strong> avec vos vraies données. Joignez votre pièce d'identité si demandé. Soyez concis et honnête — les algorithmes ne lisent pas les longs textes. Dites : « Mon compte a été bloqué par erreur, je n'ai pas violé les règles. »",
+            step2_li1: "Utilisez le <strong>vrai nom</strong> de votre compte",
+            step2_li2: "Joignez une photo de votre <strong>passeport ou pièce d'identité</strong> si demandé",
+            step2_li3: "Soumettez l'appel <strong>plusieurs fois</strong> depuis différents navigateurs",
+            step2_tip: "⚠️ Si le bouton « Envoyer » ne fonctionne pas — essayez un autre navigateur ou videz votre cache.",
+            step3_title: "3. Contactez le support Business Manager",
+            step3_text: "Si vous avez un <strong>Business Manager</strong> — contactez le support depuis là-bas. Ils répondent plus rapidement. Business Manager donne accès au <strong>chat en direct avec le support</strong>, contrairement aux utilisateurs ordinaires.",
+            step3_li1: "Allez dans Business Manager → Aide → Contacter le support",
+            step3_li2: "Choisissez <strong>chat ou e-mail</strong>",
+            step3_li3: "Décrivez le problème et ajoutez l'ID de votre compte",
+            step4_title: "4. Envoyez un e-mail directement à Facebook",
+            step4_text: "Essayez ces e-mails :",
+            step4_text2: "Incluez : <strong>votre nom, l'e-mail du compte, l'ID de la page</strong> et décrivez brièvement la situation. Joignez une photo de votre pièce d'identité si disponible.",
+            step4_tip: "⚠️ Les chances de réponse sont très faibles, mais cela vaut la peine d'essayer. Parfois, des réponses automatisées arrivent après 2-3 semaines.",
+            step5_title: "5. Ne tombez pas dans le piège des arnaqueurs",
+            step5_text: "<strong>⚠️ Personne ne peut débloquer Facebook pour 50 $.</strong>",
+            step5_text2: "Si des « spécialistes » promettent de débloquer votre compte contre de l'argent — ce sont des <strong>arnaqueurs</strong>. Ils prendront votre argent et disparaîtront, ou pire — vous bloqueront à nouveau.",
+            step5_li1: "Ne partagez jamais vos <strong>mots de passe</strong> avec qui que ce soit",
+            step5_li2: "Ne cliquez pas sur des <strong>liens suspects</strong>",
+            step5_li3: "Rappelez-vous : <strong>le support Facebook est toujours gratuit</strong>",
+            article_title: "📌 Dans tous les cas — préparez un nouveau compte",
+            article_p1: "<strong>La réalité est :</strong> même si vous soumettez un appel et contactez le support — <strong>les chances de déblocage sont minimes</strong>. Les algorithmes n'écoutent pas, le support ne répond pas, il n'y a pas de vraies personnes à l'intérieur de Facebook.",
+            article_p2: "Par conséquent, la <strong>seule solution qui fonctionne</strong> est de créer un nouveau compte et de recommencer à zéro. Oui, ça fait mal. Oui, c'est injuste. Mais c'est la <strong>réalité</strong>.",
+            article_tip_label: "💡 Astuce :",
+            article_tip_text: "créez un compte avec un <strong>e-mail professionnel</strong>, activez l'<strong>authentification à deux facteurs</strong> et <strong>ne violez pas les règles</strong>. Cela réduira le risque de bannissement.",
+            article_p3: "<strong>Rappelez-vous :</strong> si vous gérez une entreprise — ne gardez pas tout sur un seul compte. Créez <strong>plusieurs profils</strong>, utilisez <strong>Business Manager</strong> et faites des <strong>sauvegardes de votre base de clients</strong>.",
+            tg_button: "📩 Contactez-nous sur Telegram (aide à la promotion)",
+            social_label: "▸ NOS RÉSEAUX SOCIAUX ◂"
+        },
+        de: {
+            title: "Facebook-Konto wiederherstellen",
+            subtitle: "Schritt-für-Schritt-Anleitung zur Wiederherstellung Ihres deaktivierten Kontos",
+            step1_title: "1. Überprüfen Sie Ihre E-Mail und Benachrichtigungen",
+            step1_text: 'Facebook sendet den Grund für die Sperrung normalerweise an <strong>security@facebookmail.com</strong> oder im Benachrichtigungs-Tab. Überprüfen Sie Ihren Spam-Ordner — manchmal landen E-Mails dort. Wenn es keine E-Mail gibt, war die Sperrung automatisch ohne Erklärung.',
+            step1_tip: '💡 Tipp: Fügen Sie die Facebook-E-Mail zu Ihrer Whitelist hinzu, um wichtige Nachrichten nicht zu verpassen.',
+            step2_title: "2. Einspruch einlegen",
+            step2_text: 'Füllen Sie das <strong>Facebook-Einspruchsformular</strong> mit Ihren echten Daten aus. Fügen Sie Ihren Ausweis bei, falls angefordert. Seien Sie prägnant und ehrlich — Algorithmen lesen keine langen Texte. Sagen Sie: "Mein Konto wurde versehentlich gesperrt, ich habe keine Regeln verletzt."',
+            step2_li1: 'Verwenden Sie den <strong>echten Namen</strong> Ihres Kontos',
+            step2_li2: 'Fügen Sie ein Foto Ihres <strong>Passes oder Ausweises</strong> bei, falls angefordert',
+            step2_li3: 'Reichen Sie den Einspruch <strong>mehrmals</strong> von verschiedenen Browsern ein',
+            step2_tip: '⚠️ Wenn der "Senden"-Button nicht funktioniert — versuchen Sie einen anderen Browser oder leeren Sie den Cache.',
+            step3_title: "3. Kontaktieren Sie den Business Manager-Support",
+            step3_text: 'Wenn Sie einen <strong>Business Manager</strong> haben — kontaktieren Sie den Support von dort. Sie antworten schneller. Business Manager bietet Zugang zum <strong>Live-Chat-Support</strong>, im Gegensatz zu normalen Nutzern.',
+            step3_li1: 'Gehen Sie zu Business Manager → Hilfe → Support kontaktieren',
+            step3_li2: 'Wählen Sie <strong>Chat oder E-Mail</strong>',
+            step3_li3: 'Beschreiben Sie das Problem und fügen Sie Ihre Konto-ID hinzu',
+            step4_title: "4. Senden Sie eine E-Mail direkt an Facebook",
+            step4_text: 'Versuchen Sie diese E-Mails:',
+            step4_text2: 'Fügen Sie hinzu: <strong>Ihren Namen, die Konto-E-Mail, die Seiten-ID</strong> und beschreiben Sie die Situation kurz. Fügen Sie ein Foto Ihres Ausweises bei, falls verfügbar.',
+            step4_tip: '⚠️ Die Chance auf eine Antwort ist sehr gering, aber es lohnt sich zu versuchen. Manchmal kommen automatisierte Antworten nach 2-3 Wochen.',
+            step5_title: "5. Fallen Sie nicht auf Betrüger herein",
+            step5_text: '<strong>⚠️ Niemand kann Facebook für 50 $ entsperren.</strong>',
+            step5_text2: 'Wenn "Spezialisten" versprechen, Ihr Konto gegen Geld zu entsperren — sind sie <strong>Betrüger</strong>. Sie nehmen Ihr Geld und verschwinden, oder schlimmer — sperren Sie erneut.',
+            step5_li1: 'Geben Sie Ihre <strong>Passwörter</strong> niemals an andere weiter',
+            step5_li2: 'Klicken Sie nicht auf <strong>verdächtige Links</strong>',
+            step5_li3: 'Denken Sie daran: <strong>Facebook-Support ist immer kostenlos</strong>',
+            article_title: '📌 Auf jeden Fall — bereiten Sie ein neues Konto vor',
+            article_p1: '<strong>Die Realität ist:</strong> selbst wenn Sie Einspruch einlegen und den Support kontaktieren — <strong>die Chance auf Entsperrung ist minimal</strong>. Algorithmen hören nicht zu, Support antwortet nicht, es gibt keine echten Menschen bei Facebook.',
+            article_p2: 'Daher ist die <strong>einzige funktionierende Lösung</strong> die Erstellung eines neuen Kontos und der Neustart von vorne. Ja, es tut weh. Ja, es ist unfair. Aber das ist die <strong>Realität</strong>.',
+            article_tip_label: '💡 Tipp:',
+            article_tip_text: 'Erstellen Sie ein Konto mit einer <strong>geschäftlichen E-Mail</strong>, aktivieren Sie die <strong>Zwei-Faktor-Authentifizierung</strong> und <strong>verletzen Sie die Regeln nicht</strong>. Dies verringert das Risiko einer Sperrung.',
+            article_p3: '<strong>Denken Sie daran:</strong> wenn Sie ein Unternehmen führen — bewahren Sie nicht alles in einem Konto auf. Erstellen Sie <strong>mehrere Profile</strong>, nutzen Sie den <strong>Business Manager</strong> und machen Sie <strong>Backups Ihrer Kundenbasis</strong>.',
+            tg_button: '📩 Kontaktieren Sie uns auf Telegram (Hilfe bei der Promotion)',
+            social_label: '▸ UNSERE SOZIALEN MEDIEN ◂'
+        },
+        id: {
+            title: "Pemulihan Akun Facebook",
+            subtitle: "Panduan langkah demi langkah untuk memulihkan akun Anda yang dinonaktifkan",
+            step1_title: "1. Periksa Email & Notifikasi",
+            step1_text: 'Facebook biasanya mengirimkan alasan pemblokiran ke <strong>security@facebookmail.com</strong> atau di tab notifikasi. Periksa folder Spam Anda — terkadang email masuk ke sana. Jika tidak ada email, pemblokiran otomatis tanpa penjelasan.',
+            step1_tip: '💡 Tip: Tambahkan email Facebook ke daftar putih Anda untuk menghindari kehilangan pesan penting.',
+            step2_title: "2. Ajukan Banding",
+            step2_text: 'Isi <strong>Formulir Banding Facebook</strong> dengan data asli Anda. Lampirkan ID Anda jika diminta. Bersikaplah ringkas dan jujur — algoritma tidak membaca teks panjang. Katakan: "Akun saya diblokir secara tidak sengaja, saya tidak melanggar aturan."',
+            step2_li1: 'Gunakan <strong>nama asli</strong> dari akun Anda',
+            step2_li2: 'Lampirkan foto <strong>paspor atau KTP</strong> Anda jika diminta',
+            step2_li3: 'Kirimkan banding <strong>beberapa kali</strong> dari browser yang berbeda',
+            step2_tip: '⚠️ Jika tombol "Kirim" tidak berfungsi — coba browser lain atau bersihkan cache Anda.',
+            step3_title: "3. Hubungi Dukungan Business Manager",
+            step3_text: 'Jika Anda memiliki <strong>Business Manager</strong> — hubungi dukungan dari sana. Mereka merespons lebih cepat. Business Manager memberi akses ke <strong>dukungan obrolan langsung</strong>, tidak seperti pengguna biasa.',
+            step3_li1: 'Buka Business Manager → Bantuan → Hubungi Dukungan',
+            step3_li2: 'Pilih <strong>obrolan atau email</strong>',
+            step3_li3: 'Jelaskan masalahnya dan tambahkan ID akun Anda',
+            step4_title: "4. Email Facebook Secara Langsung",
+            step4_text: 'Coba email ini:',
+            step4_text2: 'Sertakan: <strong>nama Anda, email akun, ID halaman</strong> dan jelaskan situasi secara singkat. Lampirkan foto ID Anda jika tersedia.',
+            step4_tip: '⚠️ Peluang balasan sangat kecil, tetapi layak untuk dicoba. Terkadang respons otomatis datang setelah 2-3 minggu.',
+            step5_title: "5. Jangan Tertipu Penipu",
+            step5_text: '<strong>⚠️ Tidak ada yang bisa membuka blokir Facebook seharga $50.</strong>',
+            step5_text2: 'Jika "spesialis" berjanji membuka blokir akun Anda dengan uang — mereka <strong>penipu</strong>. Mereka akan mengambil uang Anda dan menghilang, atau lebih buruk — memblokir Anda lagi.',
+            step5_li1: 'Jangan pernah membagikan <strong>kata sandi</strong> Anda kepada siapa pun',
+            step5_li2: 'Jangan klik <strong>tautan mencurigakan</strong>',
+            step5_li3: 'Ingat: <strong>dukungan Facebook selalu gratis</strong>',
+            article_title: '📌 Bagaimanapun — siapkan akun baru',
+            article_p1: '<strong>Realitanya adalah:</strong> bahkan jika Anda mengajukan banding dan menghubungi dukungan — <strong>peluang pembukaan blokir sangat kecil</strong>. Algoritma tidak mendengarkan, dukungan tidak merespons, tidak ada orang sungguhan di dalam Facebook.',
+            article_p2: 'Karena itu, <strong>satu-satunya solusi yang berhasil</strong> adalah membuat akun baru dan memulai dari awal. Ya, ini menyakitkan. Ya, ini tidak adil. Tapi itulah <strong>realitas</strong>.',
+            article_tip_label: '💡 Tip:',
+            article_tip_text: 'buat akun dengan <strong>email bisnis</strong>, aktifkan <strong>otentikasi dua faktor</strong>, dan <strong>jangan melanggar aturan</strong>. Ini akan mengurangi risiko pemblokiran.',
+            article_p3: '<strong>Ingat:</strong> jika Anda menjalankan bisnis — jangan simpan semuanya dalam satu akun. Buat <strong>beberapa profil</strong>, gunakan <strong>Business Manager</strong>, dan buat <strong>cadangan basis klien Anda</strong>.',
+            tg_button: '📩 Hubungi kami di Telegram (bantuan promosi)',
+            social_label: '▸ MEDIA SOSIAL KAMI ◂'
+        },
+        tr: {
+            title: "Facebook Hesap Kurtarma",
+            subtitle: "Devre dışı bırakılan hesabınızı kurtarmak için adım adım kılavuz",
+            step1_title: "1. E-posta ve Bildirimleri Kontrol Edin",
+            step1_text: 'Facebook genellikle yasağın nedenini <strong>security@facebookmail.com</strong> adresine veya bildirim sekmesine gönderir. Spam klasörünüzü kontrol edin — bazen e-postalar oraya gider. E-posta yoksa, yasak açıklama yapılmadan otomatikti.',
+            step1_tip: '💡 İpucu: Önemli mesajları kaçırmamak için Facebook e-postasını beyaz listenize ekleyin.',
+            step2_title: "2. İtiraz Gönderin",
+            step2_text: '<strong>Facebook İtiraz Formu</strong> nu gerçek verilerinizle doldurun. İstenirse kimliğinizi ekleyin. Kısa ve dürüst olun — algoritmalar uzun metinleri okumaz. Şunu söyleyin: "Hesabım yanlışlıkla engellendi, kuralları ihlal etmedim."',
+            step2_li1: 'Hesabınızdaki <strong>gerçek adı</strong> kullanın',
+            step2_li2: 'İstenirse <strong>pasaportunuzun veya kimliğinizin</strong> fotoğrafını ekleyin',
+            step2_li3: 'İtirazı farklı tarayıcılardan <strong>birden çok kez</strong> gönderin',
+            step2_tip: '⚠️ "Gönder" düğmesi çalışmazsa — farklı bir tarayıcı deneyin veya önbelleğinizi temizleyin.',
+            step3_title: "3. Business Manager Desteğiyle İletişime Geçin",
+            step3_text: 'Bir <strong>Business Manager</strong> ınız varsa — desteği oradan iletişime geçin. Daha hızlı yanıt verirler. Business Manager, normal kullanıcıların aksine <strong>canlı sohbet desteğine</strong> erişim sağlar.',
+            step3_li1: 'Business Manager → Yardım → Destekle İletişime Geçin bölümüne gidin',
+            step3_li2: '<strong>Sohbet veya e-posta</strong> seçin',
+            step3_li3: 'Sorunu tanımlayın ve hesap kimliğinizi ekleyin',
+            step4_title: "4. Facebook'a Doğrudan E-posta Gönderin",
+            step4_text: 'Bu e-postaları deneyin:',
+            step4_text2: 'Ekleyin: <strong>adınız, hesap e-postanız, sayfa kimliğiniz</strong> ve durumu kısaca açıklayın. Mevcutsa kimliğinizin fotoğrafını ekleyin.',
+            step4_tip: '⚠️ Yanıt alma şansı çok düşük, ancak denemeye değer. Bazen 2-3 hafta sonra otomatik yanıtlar gelir.',
+            step5_title: "5. Dolandırıcılara Kanmayın",
+            step5_text: '<strong>⚠️ Hiç kimse Facebook'u 50$'a açamaz.</strong>',
+            step5_text2: '"Uzmanlar" hesabınızı para karşılığı açmayı vaat ediyorsa — bunlar <strong>dolandırıcıdır</strong>. Paranızı alıp kaybolurlar veya daha kötüsü — sizi tekrar engellerler.',
+            step5_li1: '<strong>Şifrelerinizi</strong> asla kimseyle paylaşmayın',
+            step5_li2: '<strong>Şüpheli bağlantılara</strong> tıklamayın',
+            step5_li3: 'Unutmayın: <strong>Facebook desteği her zaman ücretsizdir</strong>',
+            article_title: '📌 Her durumda — yeni bir hesap hazırlayın',
+            article_p1: '<strong>Gerçek şu ki:</strong> itiraz gönderseniz ve destekle iletişime geçseniz bile — <strong>açılma şansı minimumdur</strong>. Algoritmalar dinlemez, destek yanıt vermez, Facebook içinde gerçek insanlar yoktur.',
+            article_p2: 'Bu nedenle, <strong>tek işe yarayan çözüm</strong> yeni bir hesap oluşturmak ve sıfırdan başlamaktır. Evet, acıtır. Evet, haksız. Ama bu <strong>gerçek</strong>.',
+            article_tip_label: '💡 İpucu:',
+            article_tip_text: 'bir <strong>iş e-postası</strong> ile hesap oluşturun, <strong>iki faktörlü kimlik doğrulamayı</strong> etkinleştirin ve <strong>kuralları ihlal etmeyin</strong>. Bu, yasaklanma riskini azaltacaktır.',
+            article_p3: '<strong>Unutmayın:</strong> bir işletme yürütüyorsanız — her şeyi tek bir hesapta tutmayın. <strong>Birden çok profil</strong> oluşturun, <strong>Business Manager</strong> kullanın ve <strong>müşteri tabanınızın yedeklerini</strong> alın.',
+            tg_button: '📩 Telegram üzerinden bizimle iletişime geçin (promosyon yardımı)',
+            social_label: '▸ SOSYAL MEDYAMIZ ◂'
+        },
+        it: {
+            title: "Recupero account Facebook",
+            subtitle: "Guida passo passo per recuperare il tuo account disabilitato",
+            step1_title: "1. Controlla email e notifiche",
+            step1_text: 'Facebook di solito invia il motivo del blocco a <strong>security@facebookmail.com</strong> o nella scheda notifiche. Controlla la cartella Spam — a volte le email finiscono lì. Se non c\'è email, il blocco era automatico senza spiegazione.',
+            step1_tip: '💡 Suggerimento: aggiungi l\'email di Facebook alla tua whitelist per non perdere messaggi importanti.',
+            step2_title: "2. Invia un appello",
+            step2_text: 'Compila il <strong>Modulo di appello di Facebook</strong> con i tuoi dati reali. Allega il tuo documento d\'identità se richiesto. Sii conciso e onesto — gli algoritmi non leggono testi lunghi. Di': "Il mio account è stato bloccato per errore, non ho violato le regole."',
+            step2_li1: 'Usa il <strong>nome reale</strong> del tuo account',
+            step2_li2: 'Allega una foto del tuo <strong>passaporto o documento</strong> se richiesto',
+            step2_li3: 'Invia l\'appello <strong>più volte</strong> da browser diversi',
+            step2_tip: '⚠️ Se il pulsante "Invia" non funziona — prova un altro browser o svuota la cache.',
+            step3_title: "3. Contatta il supporto di Business Manager",
+            step3_text: 'Se hai un <strong>Business Manager</strong> — contatta il supporto da lì. Rispondono più velocemente. Business Manager dà accesso al <strong>supporto in chat dal vivo</strong>, a differenza degli utenti normali.',
+            step3_li1: 'Vai su Business Manager → Aiuto → Contatta il supporto',
+            step3_li2: 'Scegli <strong>chat o email</strong>',
+            step3_li3: 'Descrivi il problema e aggiungi l\'ID del tuo account',
+            step4_title: "4. Invia un'email direttamente a Facebook",
+            step4_text: 'Prova queste email:',
+            step4_text2: 'Includi: <strong>il tuo nome, l\'email dell\'account, l\'ID della pagina</strong> e descrivi brevemente la situazione. Allega una foto del tuo documento se disponibile.',
+            step4_tip: '⚠️ La possibilità di risposta è molto bassa, ma vale la pena provare. A volte arrivano risposte automatiche dopo 2-3 settimane.',
+            step5_title: "5. Non cadere nelle truffe",
+            step5_text: '<strong>⚠️ Nessuno può sbloccare Facebook per $50.</strong>',
+            step5_text2: 'Se "specialisti" promettono di sbloccare il tuo account per soldi — sono <strong>truffatori</strong>. Prenderanno i tuoi soldi e spariranno, o peggio — ti bloccheranno di nuovo.',
+            step5_li1: 'Non condividere mai le tue <strong>password</strong> con nessuno',
+            step5_li2: 'Non cliccare su <strong>link sospetti</strong>',
+            step5_li3: 'Ricorda: <strong>il supporto di Facebook è sempre gratuito</strong>',
+            article_title: '📌 In ogni caso — prepara un nuovo account',
+            article_p1: '<strong>La realtà è:</strong> anche se invii un appello e contatti il supporto — <strong>le possibilità di sblocco sono minime</strong>. Gli algoritmi non ascoltano, il supporto non risponde, non ci sono persone reali all\'interno di Facebook.',
+            article_p2: 'Pertanto, <strong>l\'unica soluzione che funziona</strong> è creare un nuovo account e ricominciare da zero. Sì, fa male. Sì, è ingiusto. Ma questa è la <strong>realtà</strong>.',
+            article_tip_label: '💡 Suggerimento:',
+            article_tip_text: 'crea un account con una <strong>email aziendale</strong>, attiva l\'<strong>autenticazione a due fattori</strong> e <strong>non violare le regole</strong>. Questo ridurrà il rischio di essere bannato.',
+            article_p3: '<strong>Ricorda:</strong> se gestisci un\'azienda — non tenere tutto in un unico account. Crea <strong>più profili</strong>, usa <strong>Business Manager</strong> e fai <strong>backup della tua base clienti</strong>.',
+            tg_button: '📩 Contattaci su Telegram (aiuto con la promozione)',
+            social_label: '▸ I NOSTRI SOCIAL ◂'
+        },
+        ru: {
+            title: "Восстановление аккаунта Facebook",
+            subtitle: "Пошаговое руководство по восстановлению заблокированного аккаунта",
+            step1_title: "1. Проверьте почту и уведомления",
+            step1_text: 'Facebook обычно отправляет причину бана на <strong>security@facebookmail.com</strong> или в раздел уведомлений. Проверьте папку Спам — иногда письма попадают туда. Если письма нет, бан был автоматическим без объяснений.',
+            step1_tip: '💡 Совет: добавьте email Facebook в белый список, чтобы не пропускать важные сообщения.',
+            step2_title: "2. Подайте апелляцию",
+            step2_text: 'Заполните <strong>форму апелляции Facebook</strong> с реальными данными. Прикрепите ID, если просят. Будьте краткими и честными — алгоритмы не читают длинные тексты. Скажите: "Мой аккаунт был заблокирован по ошибке, я не нарушал правил".',
+            step2_li1: 'Используйте <strong>реальное имя</strong> из аккаунта',
+            step2_li2: 'Прикрепите фото <strong>паспорта или ID</strong>, если просят',
+            step2_li3: 'Отправьте апелляцию <strong>несколько раз</strong> из разных браузеров',
+            step2_tip: '⚠️ Если кнопка "Отправить" не работает — попробуйте другой браузер или очистите кеш.',
+            step3_title: "3. Свяжитесь с поддержкой Business Manager",
+            step3_text: 'Если у вас есть <strong>Business Manager</strong> — напишите в поддержку оттуда. Отвечают быстрее. Business Manager даёт доступ к <strong>живому чату с поддержкой</strong>, в отличие от обычных пользователей.',
+            step3_li1: 'Зайдите в Business Manager → Помощь → Связаться с поддержкой',
+            step3_li2: 'Выберите <strong>чат или email</strong>',
+            step3_li3: 'Опишите проблему и добавьте ID аккаунта',
+            step4_title: "4. Напишите на email Facebook",
+            step4_text: 'Попробуйте эти email:',
+            step4_text2: 'Укажите: <strong>ваше имя, email аккаунта, ID страницы</strong> и кратко опишите ситуацию. Прикрепите фото ID, если есть.',
+            step4_tip: '⚠️ Шанс ответа очень низкий, но попробовать стоит. Иногда приходят автоматические ответы через 2-3 недели.',
+            step5_title: "5. Не ведитесь на мошенников",
+            step5_text: '<strong>⚠️ Никто не разблокирует Facebook за $50.</strong>',
+            step5_text2: 'Если "специалисты" обещают разблокировать аккаунт за деньги — это <strong>мошенники</strong>. Они возьмут деньги и исчезнут, или хуже — заблокируют вас снова.',
+            step5_li1: 'Никогда не передавайте <strong>пароли</strong> никому',
+            step5_li2: 'Не переходите по <strong>подозрительным ссылкам</strong>',
+            step5_li3: 'Помните: <strong>поддержка Facebook всегда бесплатна</strong>',
+            article_title: '📌 В любом случае — готовьте новый аккаунт',
+            article_p1: '<strong>Реальность такова:</strong> даже если вы подадите апелляцию и напишете в поддержку — <strong>шанс на разблокировку минимален</strong>. Алгоритмы не слушают, поддержка не отвечает, живых людей внутри Facebook нет.',
+            article_p2: 'Поэтому <strong>единственное рабочее решение</strong> — создать новый аккаунт и начать всё с чистого листа. Да, это больно. Да, это несправедливо. Но это <strong>реальность</strong>.',
+            article_tip_label: '💡 Совет:',
+            article_tip_text: 'заводите аккаунт на <strong>бизнес-почту</strong>, подключите <strong>двухфакторную аутентификацию</strong> и <strong>не нарушайте правила</strong>. Это снизит риск блокировки.',
+            article_p3: '<strong>И помните:</strong> если вы ведёте бизнес — не держите всё в одном аккаунте. Создайте <strong>несколько профилей</strong>, используйте <strong>Business Manager</strong> и делайте <strong>бэкапы клиентской базы</strong>.',
+            tg_button: '📩 Свяжитесь с нами в Telegram (помощь с продвижением)',
+            social_label: '▸ НАШИ СОЦСЕТИ ◂'
+        },
+        uk: {
+            title: "Відновлення аккаунта Facebook",
+            subtitle: "Покрокове керівництво по відновленню заблокованого аккаунта",
+            step1_title: "1. Перевірте пошту та сповіщення",
+            step1_text: 'Facebook зазвичай надсилає причину бана на <strong>security@facebookmail.com</strong> або у вкладку сповіщень. Перевірте папку Спам — іноді листи потрапляють туди. Якщо листа немає, бан був автоматичним без пояснень.',
+            step1_tip: '💡 Порада: додайте email Facebook до білого списку, щоб не пропускати важливі повідомлення.',
+            step2_title: "2. Подайте апеляцію",
+            step2_text: 'Заповніть <strong>форму апеляції Facebook</strong> з реальними даними. Прикріпіть ID, якщо просять. Будьте короткими та чесними — алгоритми не читають довгі тексти. Скажіть: "Мій аккаунт був заблокований помилково, я не порушував правил".',
+            step2_li1: 'Використовуйте <strong>реальне ім\'я</strong> з аккаунта',
+            step2_li2: 'Прикріпіть фото <strong>паспорта або ID</strong>, якщо просять',
+            step2_li3: 'Надішліть апеляцію <strong>кілька разів</strong> з різних браузерів',
+            step2_tip: '⚠️ Якщо кнопка "Відправити" не працює — спробуйте інший браузер або очистіть кеш.',
+            step3_title: "3. Зверніться до Business Manager",
+            step3_text: 'Якщо у вас є <strong>Business Manager</strong> — напишіть у підтримку звідти. Відповідають швидше. Business Manager дає доступ до <strong>живого чату з підтримкою</strong>, на відміну від звичайних користувачів.',
+            step3_li1: 'Зайдіть у Business Manager → Допомога → Зв\'язатися з підтримкою',
+            step3_li2: 'Оберіть <strong>чат або email</strong>',
+            step3_li3: 'Опишіть проблему та додайте ID аккаунта',
+            step4_title: "4. Напишіть на email Facebook",
+            step4_text: 'Спробуйте ці email:',
+            step4_text2: 'Вкажіть: <strong>ваше ім\'я, email аккаунта, ID сторінки</strong> та коротко опишіть ситуацію. Прикріпіть фото ID, якщо є.',
+            step4_tip: '⚠️ Шанс відповіді дуже низький, але спробувати варто. Іноді приходять автоматичні відповіді через 2-3 тижні.',
+            step5_title: "5. Не ведіться на шахраїв",
+            step5_text: '<strong>⚠️ Ніхто не розблокує Facebook за $50.</strong>',
+            step5_text2: 'Якщо "спеціалісти" обіцяють розблокувати аккаунт за гроші — це <strong>шахраї</strong>. Вони візьмуть гроші та зникнуть, або гірше — заблокують вас знову.',
+            step5_li1: 'Ніколи не передавайте <strong>паролі</strong> нікому',
+            step5_li2: 'Не переходьте за <strong>підозрілими посиланнями</strong>',
+            step5_li3: 'Пам\'ятайте: <strong>підтримка Facebook завжди безкоштовна</strong>',
+            article_title: '📌 В будь-якому випадку — готуйте новий аккаунт',
+            article_p1: '<strong>Реальність така:</strong> навіть якщо ви подасте апеляцію та напишете в підтримку — <strong>шанс на розблокування мінімальний</strong>. Алгоритми не слухають, підтримка не відповідає, живих людей всередині Facebook немає.',
+            article_p2: 'Тому <strong>єдине робоче рішення</strong> — створити новий аккаунт і почати з чистого аркуша. Так, це боляче. Так, це несправедливо. Але це <strong>реальність</strong>.',
+            article_tip_label: '💡 Порада:',
+            article_tip_text: 'заводьте аккаунт на <strong>бізнес-пошту</strong>, підключіть <strong>двофакторну аутентифікацію</strong> та <strong>не порушуйте правила</strong>. Це знизить ризик блокування.',
+            article_p3: '<strong>І пам\'ятайте:</strong> якщо ви ведете бізнес — не тримайте все в одному аккаунті. Створіть <strong>кілька профілів</strong>, використовуйте <strong>Business Manager</strong> та робіть <strong>бекапи клієнтської бази</strong>.',
+            tg_button: '📩 Зв\'яжіться з нами в Telegram (допомога з просуванням)',
+            social_label: '▸ НАШІ СОЦМЕРЕЖІ ◂'
+        },
+        pl: {
+            title: "Odzyskiwanie konta Facebook",
+            subtitle: "Przewodnik krok po kroku, jak odzyskać zablokowane konto",
+            step1_title: "1. Sprawdź e-mail i powiadomienia",
+            step1_text: 'Facebook zwykle wysyła powód blokady na <strong>security@facebookmail.com</strong> lub w zakładce powiadomień. Sprawdź folder Spam — czasami e-maile tam trafiają. Jeśli nie ma e-maila, blokada była automatyczna bez wyjaśnienia.',
+            step1_tip: '💡 Wskazówka: dodaj e-mail Facebooka do białej listy, aby nie przegapić ważnych wiadomości.',
+            step2_title: "2. Złóż odwołanie",
+            step2_text: 'Wypełnij <strong>formularz odwoławczy Facebooka</strong> swoimi prawdziwymi danymi. Dołącz dowód tożsamości, jeśli jest wymagany. Bądź zwięzły i szczery — algorytmy nie czytają długich tekstów. Powiedz: "Moje konto zostało zablokowane przez pomyłkę, nie naruszyłem zasad."',
+            step2_li1: 'Użyj <strong>prawdziwego imienia</strong> z konta',
+            step2_li2: 'Dołącz zdjęcie <strong>paszportu lub dowodu</strong>, jeśli jest wymagane',
+            step2_li3: 'Wyślij odwołanie <strong>kilka razy</strong> z różnych przeglądarek',
+            step2_tip: '⚠️ Jeśli przycisk "Wyślij" nie działa — spróbuj innej przeglądarki lub wyczyść pamięć podręczną.',
+            step3_title: "3. Skontaktuj się z pomocą Business Manager",
+            step3_text: 'Jeśli masz <strong>Business Manager</strong> — skontaktuj się z pomocą stamtąd. Odpowiadają szybciej. Business Manager daje dostęp do <strong>czatu na żywo z pomocą</strong>, w przeciwieństwie do zwykłych użytkowników.',
+            step3_li1: 'Przejdź do Business Manager → Pomoc → Skontaktuj się z pomocą',
+            step3_li2: 'Wybierz <strong>czat lub e-mail</strong>',
+            step3_li3: 'Opisz problem i dodaj ID swojego konta',
+            step4_title: "4. Wyślij e-mail bezpośrednio do Facebooka",
+            step4_text: 'Wypróbuj te e-maile:',
+            step4_text2: 'Dołącz: <strong>swoje imię, e-mail konta, ID strony</strong> i krótko opisz sytuację. Dołącz zdjęcie dowodu, jeśli masz.',
+            step4_tip: '⚠️ Szansa na odpowiedź jest bardzo niska, ale warto spróbować. Czasami automatyczne odpowiedzi przychodzą po 2-3 tygodniach.',
+            step5_title: "5. Nie daj się oszukać",
+            step5_text: '<strong>⚠️ Nikt nie może odblokować Facebooka za $50.</strong>',
+            step5_text2: 'Jeśli "specjaliści" obiecują odblokować konto za pieniądze — to <strong>oszustwa</strong>. Wezmą pieniądze i znikną, albo gorzej — zablokują cię ponownie.',
+            step5_li1: 'Nigdy nie udostępniaj swoich <strong>haseł</strong> nikomu',
+            step5_li2: 'Nie klikaj w <strong>podejrzane linki</strong>',
+            step5_li3: 'Pamiętaj: <strong>pomoc Facebooka jest zawsze darmowa</strong>',
+            article_title: '📌 W każdym przypadku — przygotuj nowe konto',
+            article_p1: '<strong>Rzeczywistość jest taka:</strong> nawet jeśli złożysz odwołanie i skontaktujesz się z pomocą — <strong>szansa na odblokowanie jest minimalna</strong>. Algorytmy nie słuchają, pomoc nie odpowiada, w Facebooku nie ma prawdziwych ludzi.',
+            article_p2: 'Dlatego <strong>jedynym działającym rozwiązaniem</strong> jest utworzenie nowego konta i rozpoczęcie od zera. Tak, to boli. Tak, to niesprawiedliwe. Ale to <strong>rzeczywistość</strong>.',
+            article_tip_label: '💡 Wskazówka:',
+            article_tip_text: 'załóż konto na <strong>służbowy e-mail</strong>, włącz <strong>uwierzytelnianie dwuskładnikowe</strong> i <strong>nie naruszaj zasad</strong>. To zmniejszy ryzyko blokady.',
+            article_p3: '<strong>Pamiętaj:</strong> jeśli prowadzisz firmę — nie trzymaj wszystkiego na jednym koncie. Utwórz <strong>wiele profili</strong>, używaj <strong>Business Manager</strong> i rób <strong>kopie zapasowe bazy klientów</strong>.',
+            tg_button: '📩 Skontaktuj się z nami na Telegramie (pomoc w promocji)',
+            social_label: '▸ NASZE MEDIA SPOŁECZNOŚCIOWE ◂'
+        },
+        nl: {
+            title: "Facebook-account herstellen",
+            subtitle: "Stapsgewijze handleiding voor het herstellen van uw uitgeschakelde account",
+            step1_title: "1. Controleer uw e-mail en meldingen",
+            step1_text: 'Facebook stuurt de reden van de blokkade meestal naar <strong>security@facebookmail.com</strong> of in het meldingen-tabblad. Controleer uw Spam-map — soms belanden e-mails daar. Als er geen e-mail is, was de blokkade automatisch zonder uitleg.',
+            step1_tip: '💡 Tip: voeg het e-mailadres van Facebook toe aan uw witte lijst om belangrijke berichten niet te missen.',
+            step2_title: "2. Dien een beroep in",
+            step2_text: 'Vul het <strong>Facebook-beroepsformulier</strong> in met uw echte gegevens. Voeg uw ID toe indien gevraagd. Wees beknopt en eerlijk — algoritmen lezen geen lange teksten. Zeg: "Mijn account is per ongeluk geblokkeerd, ik heb geen regels overtreden."',
+            step2_li1: 'Gebruik de <strong>echte naam</strong> van uw account',
+            step2_li2: 'Voeg een foto van uw <strong>paspoort of ID</strong> toe indien gevraagd',
+            step2_li3: 'Dien het beroep <strong>meerdere keren</strong> in vanuit verschillende browsers',
+            step2_tip: '⚠️ Als de knop "Verzenden" niet werkt — probeer een andere browser of wis uw cache.',
+            step3_title: "3. Neem contact op met Business Manager-ondersteuning",
+            step3_text: 'Als u een <strong>Business Manager</strong> heeft — neem dan contact op met de ondersteuning via daar. Ze reageren sneller. Business Manager biedt toegang tot <strong>live chat-ondersteuning</strong>, in tegenstelling tot gewone gebruikers.',
+            step3_li1: 'Ga naar Business Manager → Help → Neem contact op met ondersteuning',
+            step3_li2: 'Kies <strong>chat of e-mail</strong>',
+            step3_li3: 'Beschrijf het probleem en voeg uw account-ID toe',
+            step4_title: "4. Stuur een e-mail rechtstreeks naar Facebook",
+            step4_text: 'Probeer deze e-mails:',
+            step4_text2: 'Voeg toe: <strong>uw naam, account-e-mail, pagina-ID</strong> en beschrijf de situatie kort. Voeg een foto van uw ID toe indien beschikbaar.',
+            step4_tip: '⚠️ De kans op een reactie is erg klein, maar het is het proberen waard. Soms komen er automatische reacties na 2-3 weken.',
+            step5_title: "5. Trap niet in oplichting",
+            step5_text: '<strong>⚠️ Niemand kan Facebook ontgrendelen voor $50.</strong>',
+            step5_text2: 'Als "specialisten" beloven uw account te ontgrendelen voor geld — zijn ze <strong>oplichters</strong>. Ze nemen uw geld en verdwijnen, of erger — ze blokkeren u opnieuw.',
+            step5_li1: 'Deel uw <strong>wachtwoorden</strong> nooit met iemand',
+            step5_li2: 'Klik niet op <strong>verdachte links</strong>',
+            step5_li3: 'Onthoud: <strong>Facebook-ondersteuning is altijd gratis</strong>',
+            article_title: '📌 Bereid in ieder geval een nieuw account voor',
+            article_p1: '<strong>De realiteit is:</strong> zelfs als u beroep indient en contact opneemt met ondersteuning — <strong>de kans op ontgrendeling is minimaal</strong>. Algoritmen luisteren niet, ondersteuning reageert niet, er zijn geen echte mensen binnen Facebook.',
+            article_p2: 'Daarom is de <strong>enige werkende oplossing</strong> het aanmaken van een nieuw account en opnieuw beginnen. Ja, het doet pijn. Ja, het is oneerlijk. Maar dat is de <strong>realiteit</strong>.',
+            article_tip_label: '💡 Tip:',
+            article_tip_text: 'maak een account aan met een <strong>zakelijke e-mail</strong>, schakel <strong>tweefactorauthenticatie</strong> in en <strong>overtreed de regels niet</strong>. Dit vermindert het risico op een blokkade.',
+            article_p3: '<strong>Onthoud:</strong> als u een bedrijf runt — bewaar niet alles in één account. Maak <strong>meerdere profielen</strong>, gebruik <strong>Business Manager</strong> en maak <strong>back-ups van uw klantenbestand</strong>.',
+            tg_button: '📩 Neem contact met ons op via Telegram (hulp bij promotie)',
+            social_label: '▸ ONZE SOCIALE MEDIA ◂'
+        },
+        ja: {
+            title: "Facebookアカウント復旧",
+            subtitle: "無効化されたアカウントを復旧するためのステップバイステップガイド",
+            step1_title: "1. メールと通知を確認する",
+            step1_text: 'Facebookは通常、停止の理由を <strong>security@facebookmail.com</strong> または通知タブに送信します。スパムフォルダを確認してください — メールがそこに届くことがあります。メールがない場合、停止は説明なしの自動的なものでした。',
+            step1_tip: '💡 ヒント：重要なメッセージを見逃さないように、Facebookのメールをホワイトリストに追加してください。',
+            step2_title: "2. 異議申し立てを提出する",
+            step2_text: '<strong>Facebook異議申し立てフォーム</strong>に実際のデータを入力してください。要求された場合は身分証明書を添付してください。簡潔で正直に — アルゴリズムは長いテキストを読みません。「アカウントは誤ってブロックされました。ルールに違反していません」と言ってください。',
+            step2_li1: 'アカウントの<strong>実名</strong>を使用する',
+            step2_li2: '要求された場合は<strong>パスポートまたはID</strong>の写真を添付する',
+            step2_li3: '異なるブラウザから異議申し立てを<strong>複数回</strong>送信する',
+            step2_tip: '⚠️ 「送信」ボタンが機能しない場合は — 別のブラウザを試すか、キャッシュをクリアしてください。',
+            step3_title: "3. Business Managerサポートに連絡する",
+            step3_text: '<strong>Business Manager</strong>がある場合は — そこからサポートに連絡してください。より速く応答します。Business Managerは、通常のユーザーとは異なり、<strong>ライブチャットサポート</strong>へのアクセスを提供します。',
+            step3_li1: 'Business Manager → ヘルプ → サポートにお問い合わせに移動',
+            step3_li2: '<strong>チャットまたはメール</strong>を選択',
+            step3_li3: '問題を説明し、アカウントIDを追加する',
+            step4_title: "4. Facebookに直接メールを送信する",
+            step4_text: '以下のメールを試してみてください：',
+            step4_text2: '含める：<strong>名前、アカウントメール、ページID</strong>、状況を簡潔に説明。可能であればIDの写真を添付。',
+            step4_tip: '⚠️ 返信の可能性は非常に低いですが、試す価値はあります。時々、2〜3週間後に自動応答が届きます。',
+            step5_title: "5. 詐欺師に騙されないでください",
+            step5_text: '<strong>⚠️ 誰も50ドルでFacebookをロック解除できません。</strong>',
+            step5_text2: '「専門家」がお金でアカウントのロック解除を約束する場合 — 彼らは<strong>詐欺師</strong>です。彼らはあなたのお金を受け取り、姿を消すか、さらに悪いことに — あなたを再びブロックします。',
+            step5_li1: '<strong>パスワード</strong>を誰とも共有しない',
+            step5_li2: '<strong>怪しいリンク</strong>をクリックしない',
+            step5_li3: '覚えておいてください：<strong>Facebookサポートは常に無料です</strong>',
+            article_title: '📌 いずれにせよ — 新しいアカウントを準備してください',
+            article_p1: '<strong>現実は：</strong>異議申し立てを提出し、サポートに連絡しても — <strong>ロック解除の可能性は最小限です</strong>。アルゴリズムは聞かず、サポートは応答せず、Facebook内に実際の人はいません。',
+            article_p2: 'したがって、<strong>唯一の機能する解決策</strong>は新しいアカウントを作成し、ゼロから始めることです。はい、それは痛いです。はい、それは不公平です。しかし、それが<strong>現実</strong>です。',
+            article_tip_label: '💡 ヒント：',
+            article_tip_text: '<strong>ビジネスメール</strong>でアカウントを作成し、<strong>二要素認証</strong>を有効にし、<strong>ルールを破らない</strong>ようにしてください。これにより、停止のリスクが軽減されます。',
+            article_p3: '<strong>覚えておいてください：</strong>ビジネスを運営している場合 — すべてを1つのアカウントに保存しないでください。複数のプロフィールを作成し、<strong>Business Manager</strong>を使用し、<strong>クライアントベースのバックアップ</strong>を作成してください。',
+            tg_button: '📩 Telegramでお問い合わせ（プロモーションに関するヘルプ）',
+            social_label: '▸ 私たちのソーシャルメディア ◂'
+        },
+        ko: {
+            title: "Facebook 계정 복구",
+            subtitle: "비활성화된 계정을 복구하는 단계별 가이드",
+            step1_title: "1. 이메일 및 알림 확인",
+            step1_text: 'Facebook은 일반적으로 차단 이유를 <strong>security@facebookmail.com</strong> 또는 알림 탭으로 보냅니다. 스팸 폴더를 확인하세요 — 때때로 이메일이 거기에 도착합니다. 이메일이 없으면 차단은 설명 없이 자동으로 이루어진 것입니다.',
+            step1_tip: '💡 팁: 중요한 메시지를 놓치지 않도록 Facebook 이메일을 화이트리스트에 추가하세요.',
+            step2_title: "2. 이의 제기 제출",
+            step2_text: '<strong>Facebook 이의 제기 양식</strong>을 실제 데이터로 작성하세요. 요청 시 신분증을 첨부하세요. 간결하고 정직하게 — 알고리즘은 긴 텍스트를 읽지 않습니다. "내 계정이 실수로 차단되었습니다. 규칙을 위반하지 않았습니다."라고 말하세요.',
+            step2_li1: '계정의 <strong>실제 이름</strong> 사용',
+            step2_li2: '요청 시 <strong>여권 또는 신분증</strong> 사진 첨부',
+            step2_li3: '다른 브라우저에서 이의 제기를 <strong>여러 번</strong> 제출',
+            step2_tip: '⚠️ "제출" 버튼이 작동하지 않으면 — 다른 브라우저를 시도하거나 캐시를 지우세요.',
+            step3_title: "3. Business Manager 지원팀에 문의",
+            step3_text: '<strong>Business Manager</strong>가 있으면 — 거기에서 지원팀에 문의하세요. 더 빠르게 응답합니다. Business Manager는 일반 사용자와 달리 <strong>라이브 채팅 지원</strong>에 대한 액세스를 제공합니다.',
+            step3_li1: 'Business Manager → 도움말 → 지원팀에 문의로 이동',
+            step3_li2: '<strong>채팅 또는 이메일</strong> 선택',
+            step3_li3: '문제를 설명하고 계정 ID를 추가하세요',
+            step4_title: "4. Facebook에 직접 이메일 보내기",
+            step4_text: '다음 이메일을 시도하세요:',
+            step4_text2: '포함: <strong>이름, 계정 이메일, 페이지 ID</strong> 및 상황을 간략히 설명. 가능하면 신분증 사진을 첨부하세요.',
+            step4_tip: '⚠️ 답변 가능성은 매우 낮지만 시도해 볼 가치가 있습니다. 때때로 2-3주 후에 자동 응답이 도착합니다.',
+            step5_title: "5. 사기꾼에게 속지 마세요",
+            step5_text: '<strong>⚠️ 아무도 50달러에 Facebook을 잠금 해제할 수 없습니다.</strong>',
+            step5_text2: '"전문가"가 돈을 받고 계정을 잠금 해제하겠다고 약속하면 — 그들은 <strong>사기꾼</strong>입니다. 그들은 돈을 받고 사라지거나, 더 나쁘게는 — 당신을 다시 차단할 것입니다.',
+            step5_li1: '<strong>비밀번호</strong>를 누구와도 공유하지 마세요',
+            step5_li2: '<strong>의심스러운 링크</strong>를 클릭하지 마세요',
+            step5_li3: '기억하세요: <strong>Facebook 지원은 항상 무료입니다</strong>',
+            article_title: '📌 어쨌든 — 새 계정을 준비하세요',
+            article_p1: '<strong>현실은:</strong> 이의 제기를 제출하고 지원팀에 연락하더라도 — <strong>잠금 해제 가능성은 최소화됩니다</strong>. 알고리즘은 듣지 않고, 지원은 응답하지 않으며, Facebook 내부에는 실제 사람이 없습니다.',
+            article_p2: '따라서 <strong>유일한 작동 솔루션</strong>은 새 계정을 만들고 처음부터 시작하는 것입니다. 네, 아픕니다. 네, 불공평합니다. 하지만 그것이 <strong>현실</strong>입니다.',
+            article_tip_label: '💡 팁:',
+            article_tip_text: '<strong>비즈니스 이메일</strong>로 계정을 만들고, <strong>이중 인증</strong>을 활성화하고, <strong>규칙을 위반하지 마세요</strong>. 이렇게 하면 차단 위험이 줄어듭니다.',
+            article_p3: '<strong>기억하세요:</strong> 비즈니스를 운영하는 경우 — 모든 것을 하나의 계정에 보관하지 마세요. 여러 프로필을 만들고, <strong>Business Manager</strong>를 사용하고, <strong>클라이언트 기반의 백업</strong>을 만드세요.',
+            tg_button: '📩 Telegram으로 문의하세요 (프로모션 도움말)',
+            social_label: '▸ 우리의 소셜 미디어 ◂'
+        },
+        zh: {
+            title: "Facebook 账户恢复",
+            subtitle: "恢复已禁用账户的分步指南",
+            step1_title: "1. 检查电子邮件和通知",
+            step1_text: 'Facebook 通常会将禁令原因发送至 <strong>security@facebookmail.com</strong> 或通知选项卡。检查您的垃圾邮件文件夹 — 有时电子邮件会进入那里。如果没有电子邮件，则禁令是自动的，没有解释。',
+            step1_tip: '💡 提示：将 Facebook 电子邮件添加到白名单，以免错过重要消息。',
+            step2_title: "2. 提交申诉",
+            step2_text: '使用您的真实数据填写 <strong>Facebook 申诉表</strong>。如有要求，请附上您的身份证件。要简洁诚实 — 算法不会阅读长文本。说："我的账户被错误封锁了，我没有违反规则。"',
+            step2_li1: '使用您账户的<strong>真实姓名</strong>',
+            step2_li2: '如有要求，请附上您的<strong>护照或身份证</strong>照片',
+            step2_li3: '从不同浏览器<strong>多次</strong>提交申诉',
+            step2_tip: '⚠️ 如果"提交"按钮不起作用 — 请尝试其他浏览器或清除缓存。',
+            step3_title: "3. 联系 Business Manager 支持",
+            step3_text: '如果您有 <strong>Business Manager</strong> — 请从那里联系支持人员。他们回复更快。Business Manager 提供 <strong>实时聊天支持</strong> 的访问权限，与普通用户不同。',
+            step3_li1: '转到 Business Manager → 帮助 → 联系支持',
+            step3_li2: '选择 <strong>聊天或电子邮件</strong>',
+            step3_li3: '描述问题并添加您的账户 ID',
+            step4_title: "4. 直接给 Facebook 发送电子邮件",
+            step4_text: '尝试这些电子邮件：',
+            step4_text2: '包括：<strong>您的姓名、账户电子邮件、页面 ID</strong> 并简要描述情况。如有，请附上您的身份证照片。',
+            step4_tip: '⚠️ 回复的可能性很低，但值得尝试。有时 2-3 周后会收到自动回复。',
+            step5_title: "5. 不要上当受骗",
+            step5_text: '<strong>⚠️ 没有人可以花 50 美元解锁 Facebook。</strong>',
+            step5_text2: '如果"专家"承诺花钱解锁您的账户 — 他们是 <strong>骗子</strong>。他们会拿走您的钱然后消失，或者更糟 — 再次封锁您。',
+            step5_li1: '切勿与任何人分享您的<strong>密码</strong>',
+            step5_li2: '不要点击<strong>可疑链接</strong>',
+            step5_li3: '记住：<strong>Facebook 支持始终是免费的</strong>',
+            article_title: '📌 无论如何 — 准备一个新账户',
+            article_p1: '<strong>现实是：</strong>即使您提交申诉并联系支持 — <strong>解锁的机会微乎其微</strong>。算法不听，支持不回应，Facebook 内部没有真实的人。',
+            article_p2: '因此，<strong>唯一有效的解决方案</strong>是创建一个新账户并从零开始。是的，这很痛苦。是的，这不公平。但这就是<strong>现实</strong>。',
+            article_tip_label: '💡 提示：',
+            article_tip_text: '使用 <strong>企业邮箱</strong> 创建账户，启用 <strong>双重身份验证</strong>，并 <strong>不要违反规则</strong>。这将降低被封锁的风险。',
+            article_p3: '<strong>记住：</strong>如果您经营企业 — 不要将所有内容都放在一个账户中。创建 <strong>多个个人资料</strong>，使用 <strong>Business Manager</strong>，并 <strong>备份您的客户群</strong>。',
+            tg_button: '📩 通过 Telegram 联系我们（推广帮助）',
+            social_label: '▸ 我们的社交媒体 ◂'
+        },
+        bn: {
+            title: "ফেসবুক অ্যাকাউন্ট পুনরুদ্ধার",
+            subtitle: "আপনার নিষ্ক্রিয় অ্যাকাউন্ট পুনরুদ্ধার করার জন্য ধাপে ধাপে গাইড",
+            step1_title: "1. ইমেইল ও নোটিফিকেশন চেক করুন",
+            step1_text: 'Facebook সাধারণত <strong>security@facebookmail.com</strong> বা নোটিফিকেশন ট্যাবে নিষেধাজ্ঞার কারণ পাঠায়। আপনার স্প্যাম ফোল্ডার চেক করুন — কখনও কখনও ইমেইল সেখানে যায়। যদি ইমেইল না থাকে, তবে নিষেধাজ্ঞাটি ব্যাখ্যা ছাড়াই স্বয়ংক্রিয় ছিল।',
+            step1_tip: '💡 টিপ: গুরুত্বপূর্ণ মেসেজ মিস না করতে Facebook ইমেইলটি আপনার হোয়াইটলিস্টে যোগ করুন।',
+            step2_title: "2. আবেদন করুন",
+            step2_text: '<strong>Facebook আবেদন ফর্ম</strong> আপনার আসল তথ্য দিয়ে পূরণ করুন। অনুরোধ করলে আপনার আইডি সংযুক্ত করুন। সংক্ষিপ্ত এবং সৎ হোন — অ্যালগরিদম লম্বা টেক্সট পড়ে না। বলুন: "আমার অ্যাকাউন্ট ভুলভাবে ব্লক করা হয়েছে, আমি নিয়ম ভঙ্গ করিনি।"',
+            step2_li1: 'আপনার অ্যাকাউন্টের <strong>আসল নাম</strong> ব্যবহার করুন',
+            step2_li2: 'অনুরোধ করলে আপনার <strong>পাসপোর্ট বা আইডি</strong> এর ছবি সংযুক্ত করুন',
+            step2_li3: 'বিভিন্ন ব্রাউজার থেকে <strong>একাধিকবার</strong> আবেদন জমা দিন',
+            step2_tip: '⚠️ "জমা দিন" বাটন কাজ না করলে — অন্য ব্রাউজার চেষ্টা করুন বা আপনার ক্যাশে ক্লিয়ার করুন।',
+            step3_title: "3. Business Manager সাপোর্টের সাথে যোগাযোগ করুন",
+            step3_text: 'আপনার যদি <strong>Business Manager</strong> থাকে — সেখান থেকে সাপোর্টের সাথে যোগাযোগ করুন। তারা দ্রুত সাড়া দেয়। Business Manager সাধারণ ব্যবহারকারীদের থেকে ভিন্ন, <strong>লাইভ চ্যাট সাপোর্ট</strong> অ্যাক্সেস দেয়।',
+            step3_li1: 'Business Manager → সাহায্য → সাপোর্টের সাথে যোগাযোগ করুন এ যান',
+            step3_li2: '<strong>চ্যাট বা ইমেইল</strong> নির্বাচন করুন',
+            step3_li3: 'সমস্যা বর্ণনা করুন এবং আপনার অ্যাকাউন্ট আইডি যোগ করুন',
+            step4_title: "4. সরাসরি Facebook-এ ইমেইল করুন",
+            step4_text: 'এই ইমেইলগুলো চেষ্টা করুন:',
+            step4_text2: 'অন্তর্ভুক্ত করুন: <strong>আপনার নাম, অ্যাকাউন্ট ইমেইল, পৃষ্ঠা আইডি</strong> এবং পরিস্থিতি সংক্ষেপে বর্ণনা করুন। উপলব্ধ থাকলে আপনার আইডির ছবি সংযুক্ত করুন।',
+            step4_tip: '⚠️ উত্তরের সম্ভাবনা খুব কম, তবে চেষ্টা করা মূল্যবান। কখনও কখনও ২-৩ সপ্তাহ পরে স্বয়ংক্রিয় প্রতিক্রিয়া আসে।',
+            step5_title: "5. প্রতারকদের দ্বারা প্রতারিত হবেন না",
+            step5_text: '<strong>⚠️ কেউ $৫০ দিয়ে Facebook আনলক করতে পারে না।</strong>',
+            step5_text2: 'যদি "বিশেষজ্ঞরা" টাকার বিনিময়ে আপনার অ্যাকাউন্ট আনলক করার প্রতিশ্রুতি দেয় — তারা <strong>প্রতারক</strong>। তারা আপনার টাকা নিয়ে অদৃশ্য হয়ে যাবে, বা আরও খারাপ — আপনাকে আবার ব্লক করবে।',
+            step5_li1: 'আপনার <strong>পাসওয়ার্ড</strong> কখনও কারও সাথে শেয়ার করবেন না',
+            step5_li2: '<strong>সন্দেহজনক লিঙ্কে</strong> ক্লিক করবেন না',
+            step5_li3: 'মনে রাখবেন: <strong>Facebook সাপোর্ট সবসময় বিনামূল্যে</strong>',
+            article_title: '📌 যে কোনও ক্ষেত্রে — একটি নতুন অ্যাকাউন্ট প্রস্তুত করুন',
+            article_p1: '<strong>বাস্তবতা হল:</strong> আপনি আবেদন জমা দিলেও এবং সাপোর্টের সাথে যোগাযোগ করলেও — <strong>আনলক হওয়ার সম্ভাবনা ন্যূনতম</strong>। অ্যালগরিদম শোনে না, সাপোর্ট সাড়া দেয় না, Facebook এর ভিতরে কোনও প্রকৃত মানুষ নেই।',
+            article_p2: 'অতএব, <strong>একমাত্র কার্যকর সমাধান</strong> হল একটি নতুন অ্যাকাউন্ট তৈরি করা এবং নতুন করে শুরু করা। হ্যাঁ, এটি কষ্টকর। হ্যাঁ, এটি অন্যায়। কিন্তু এটি <strong>বাস্তবতা</strong>।',
+            article_tip_label: '💡 টিপ:',
+            article_tip_text: 'একটি <strong>ব্যবসায়িক ইমেইল</strong> দিয়ে অ্যাকাউন্ট তৈরি করুন, <strong>দ্বি-ফ্যাক্টর প্রমাণীকরণ</strong> সক্রিয় করুন এবং <strong>নিয়ম ভঙ্গ করবেন না</strong>। এটি নিষেধাজ্ঞার ঝুঁকি কমাবে।',
+            article_p3: '<strong>মনে রাখবেন:</strong> যদি আপনি ব্যবসা পরিচালনা করেন — সবকিছু এক অ্যাকাউন্টে রাখবেন না। <strong>একাধিক প্রোফাইল</strong> তৈরি করুন, <strong>Business Manager</strong> ব্যবহার করুন এবং আপনার <strong>ক্লায়েন্ট বেসের ব্যাকআপ</strong> তৈরি করুন।',
+            tg_button: '📩 Telegram এ আমাদের সাথে যোগাযোগ করুন (প্রচার সহায়তা)',
+            social_label: '▸ আমাদের সোশ্যাল মিডিয়া ◂'
+        },
+        ur: {
+            title: "فیس بک اکاؤنٹ کی بازیابی",
+            subtitle: "اپنے غیر فعال اکاؤنٹ کو بحال کرنے کے لیے مرحلہ وار گائیڈ",
+            step1_title: "1. ای میل اور اطلاعات چیک کریں",
+            step1_text: 'Facebook عام طور پر پابندی کی وجہ <strong>security@facebookmail.com</strong> یا اطلاعات ٹیب پر بھیجتا ہے۔ اپنے سپیم فولڈر کو چیک کریں — کبھی کبھار ای میلز وہاں چلی جاتی ہیں۔ اگر کوئی ای میل نہیں ہے، تو پابندی بغیر وضاحت کے خودکار تھی۔',
+            step1_tip: '💡 مشورہ: اہم پیغامات سے محروم نہ ہونے کے لیے Facebook ای میل کو اپنی وائٹ لسٹ میں شامل کریں۔',
+            step2_title: "2. اپیل جمع کروائیں",
+            step2_text: '<strong>Facebook اپیل فارم</strong> کو اپنے حقیقی ڈیٹا سے پُر کریں۔ اگر درخواست ہو تو اپنی شناخت منسلک کریں۔ مختصر اور ایماندار رہیں — الگورتھم طویل تحریر نہیں پڑھتے۔ کہیں: "میرا اکاؤنٹ غلطی سے بلاک کر دیا گیا تھا، میں نے قوانین کی خلاف ورزی نہیں کی۔"',
+            step2_li1: 'اپنے اکاؤنٹ کا <strong>حقیقی نام</strong> استعمال کریں',
+            step2_li2: 'اگر درخواست ہو تو اپنے <strong>پاسپورٹ یا شناختی کارڈ</strong> کی تصویر منسلک کریں',
+            step2_li3: 'مختلف براؤزرز سے اپیل کو <strong>کئی بار</strong> جمع کروائیں',
+            step2_tip: '⚠️ اگر "جمع کروائیں" بٹن کام نہ کرے — تو کوئی اور براؤزر آزمائیں یا اپنا کیشے صاف کریں۔',
+            step3_title: "3. Business Manager سپورٹ سے رابطہ کریں",
+            step3_text: 'اگر آپ کے پاس <strong>Business Manager</strong> ہے — تو وہاں سے سپورٹ سے رابطہ کریں۔ وہ تیزی سے جواب دیتے ہیں۔ Business Manager عام صارفین کے برعکس، <strong>لائیو چیٹ سپورٹ</strong> تک رسائی فراہم کرتا ہے۔',
+            step3_li1: 'Business Manager → مدد → سپورٹ سے رابطہ کریں پر جائیں',
+            step3_li2: '<strong>چیٹ یا ای میل</strong> منتخب کریں',
+            step3_li3: 'مسئلہ بیان کریں اور اپنا اکاؤنٹ آئی ڈی شامل کریں',
+            step4_title: "4. براہ راست Facebook کو ای میل کریں",
+            step4_text: 'ان ای میلز کو آزمائیں:',
+            step4_text2: 'شامل کریں: <strong>آپ کا نام، اکاؤنٹ ای میل، صفحہ آئی ڈی</strong> اور صورتحال مختصراً بیان کریں۔ اگر دستیاب ہو تو اپنی شناخت کی تصویر منسلک کریں۔',
+            step4_tip: '⚠️ جواب ملنے کا امکان بہت کم ہے، لیکن کوشش کرنا قابلِ قدر ہے۔ کبھی کبھار 2-3 ہفتوں بعد خودکار جوابات آتے ہیں۔',
+            step5_title: "5. دھوکے بازوں کا شکار نہ ہوں",
+            step5_text: '<strong>⚠️ کوئی بھی $50 میں Facebook انلاک نہیں کر سکتا۔</strong>',
+            step5_text2: 'اگر "ماہرین" پیسے کے عوض آپ کا اکاؤنٹ انلاک کرنے کا وعدہ کریں — تو وہ <strong>دھوکے باز</strong> ہیں۔ وہ آپ کے پیسے لے کر غائب ہو جائیں گے، یا اس سے بھی بدتر — آپ کو دوبارہ بلاک کر دیں گے۔',
+            step5_li1: 'اپنے <strong>پاس ورڈز</strong> کبھی کسی کے ساتھ شیئر نہ کریں',
+            step5_li2: '<strong>مشکوک لنکس</strong> پر کلک نہ کریں',
+            step5_li3: 'یاد رکھیں: <strong>Facebook سپورٹ ہمیشہ مفت ہے</strong>',
+            article_title: '📌 کسی بھی صورت میں — نیا اکاؤنٹ تیار کریں',
+            article_p1: '<strong>حقیقت یہ ہے:</strong> چاہے آپ اپیل جمع کروائیں اور سپورٹ سے رابطہ کریں — <strong>انلاک ہونے کا امکان بہت کم ہے</strong>۔ الگورتھم نہیں سنتے، سپورٹ جواب نہیں دیتی، Facebook کے اندر کوئی حقیقی لوگ نہیں ہیں۔',
+            article_p2: 'لہذا، <strong>صرف کام کرنے والا حل</strong> ایک نیا اکاؤنٹ بنانا اور صفر سے شروع کرنا ہے۔ ہاں، یہ تکلیف دہ ہے۔ ہاں، یہ ناانصافی ہے۔ لیکن یہ <strong>حقیقت</strong> ہے۔',
+            article_tip_label: '💡 مشورہ:',
+            article_tip_text: 'ایک <strong>کاروباری ای میل</strong> پر اکاؤنٹ بنائیں، <strong>دو عنصری تصدیق</strong> کو فعال کریں، اور <strong>قوانین کی خلاف ورزی نہ کریں</strong>۔ اس سے پابندی کا خطرہ کم ہو جائے گا۔',
+            article_p3: '<strong>یاد رکھیں:</strong> اگر آپ کاروبار چلاتے ہیں — تو سب کچھ ایک اکاؤنٹ میں نہ رکھیں۔ <strong>متعدد پروفائلز</strong> بنائیں، <strong>Business Manager</strong> استعمال کریں، اور اپنے <strong>کلائنٹ بیس کا بیک اپ</strong> بنائیں۔',
+            tg_button: '📩 Telegram پر ہم سے رابطہ کریں (پروموشن مدد)',
+            social_label: '▸ ہمارے سوشل میڈیا ◂'
+        },
+        vi: {
+            title: "Khôi phục tài khoản Facebook",
+            subtitle: "Hướng dẫn từng bước để khôi phục tài khoản bị vô hiệu hóa của bạn",
+            step1_title: "1. Kiểm tra Email & Thông báo",
+            step1_text: 'Facebook thường gửi lý do cấm đến <strong>security@facebookmail.com</strong> hoặc trong tab thông báo. Kiểm tra thư mục Spam — đôi khi email vào đó. Nếu không có email, lệnh cấm là tự động mà không có giải thích.',
+            step1_tip: '💡 Mẹo: Thêm email Facebook vào danh sách trắng để không bỏ lỡ tin nhắn quan trọng.',
+            step2_title: "2. Gửi khiếu nại",
+            step2_text: 'Điền <strong>Mẫu khiếu nại Facebook</strong> với dữ liệu thực của bạn. Đính kèm ID của bạn nếu được yêu cầu. Hãy ngắn gọn và trung thực — thuật toán không đọc văn bản dài. Nói: "Tài khoản của tôi bị chặn nhầm, tôi không vi phạm quy tắc."',
+            step2_li1: 'Sử dụng <strong>tên thật</strong> từ tài khoản của bạn',
+            step2_li2: 'Đính kèm ảnh <strong>hộ chiếu hoặc ID</strong> của bạn nếu được yêu cầu',
+            step2_li3: 'Gửi khiếu nại <strong>nhiều lần</strong> từ các trình duyệt khác nhau',
+            step2_tip: '⚠️ Nếu nút "Gửi" không hoạt động — hãy thử trình duyệt khác hoặc xóa bộ nhớ cache.',
+            step3_title: "3. Liên hệ với bộ phận hỗ trợ Business Manager",
+            step3_text: 'Nếu bạn có <strong>Business Manager</strong> — hãy liên hệ với bộ phận hỗ trợ từ đó. Họ phản hồi nhanh hơn. Business Manager cung cấp quyền truy cập vào <strong>hỗ trợ trò chuyện trực tiếp</strong>, không giống như người dùng thông thường.',
+            step3_li1: 'Đi tới Business Manager → Trợ giúp → Liên hệ với bộ phận hỗ trợ',
+            step3_li2: 'Chọn <strong>trò chuyện hoặc email</strong>',
+            step3_li3: 'Mô tả vấn đề và thêm ID tài khoản của bạn',
+            step4_title: "4. Gửi email trực tiếp cho Facebook",
+            step4_text: 'Hãy thử các email này:',
+            step4_text2: 'Bao gồm: <strong>tên của bạn, email tài khoản, ID trang</strong> và mô tả ngắn gọn tình huống. Đính kèm ảnh ID của bạn nếu có.',
+            step4_tip: '⚠️ Cơ hội nhận được phản hồi rất thấp, nhưng đáng để thử. Đôi khi phản hồi tự động đến sau 2-3 tuần.',
+            step5_title: "5. Đừng mắc bẫy lừa đảo",
+            step5_text: '<strong>⚠️ Không ai có thể mở khóa Facebook với giá 50 đô la.</strong>',
+            step5_text2: 'Nếu "chuyên gia" hứa mở khóa tài khoản của bạn với tiền — họ là <strong>kẻ lừa đảo</strong>. Họ sẽ lấy tiền của bạn và biến mất, hoặc tệ hơn — chặn bạn một lần nữa.',
+            step5_li1: 'Không bao giờ chia sẻ <strong>mật khẩu</strong> của bạn với bất kỳ ai',
+            step5_li2: 'Không nhấp vào <strong>liên kết đáng ngờ</strong>',
+            step5_li3: 'Hãy nhớ: <strong>hỗ trợ Facebook luôn miễn phí</strong>',
+            article_title: '📌 Trong mọi trường hợp — hãy chuẩn bị một tài khoản mới',
+            article_p1: '<strong>Thực tế là:</strong> ngay cả khi bạn gửi khiếu nại và liên hệ với bộ phận hỗ trợ — <strong>cơ hội mở khóa là rất nhỏ</strong>. Các thuật toán không lắng nghe, hỗ trợ không phản hồi, không có người thật bên trong Facebook.',
+            article_p2: 'Do đó, <strong>giải pháp duy nhất hiệu quả</strong> là tạo một tài khoản mới và bắt đầu lại từ đầu. Vâng, nó gây tổn thương. Vâng, nó không công bằng. Nhưng đó là <strong>thực tế</strong>.',
+            article_tip_label: '💡 Mẹo:',
+            article_tip_text: 'tạo tài khoản bằng <strong>email kinh doanh</strong>, bật <strong>xác thực hai yếu tố</strong> và <strong>không vi phạm quy tắc</strong>. Điều này sẽ giảm nguy cơ bị cấm.',
+            article_p3: '<strong>Hãy nhớ:</strong> nếu bạn điều hành một doanh nghiệp — đừng giữ mọi thứ trong một tài khoản. Tạo <strong>nhiều hồ sơ</strong>, sử dụng <strong>Business Manager</strong> và <strong>sao lưu cơ sở khách hàng</strong> của bạn.',
+            tg_button: '📩 Liên hệ với chúng tôi trên Telegram (trợ giúp quảng cáo)',
+            social_label: '▸ MẠNG XÃ HỘI CỦA CHÚNG TÔI ◂'
+        },
+        th: {
+            title: "การกู้คืนบัญชี Facebook",
+            subtitle: "คำแนะนำทีละขั้นตอนในการกู้คืนบัญชีที่ถูกปิดใช้งานของคุณ",
+            step1_title: "1. ตรวจสอบอีเมลและการแจ้งเตือน",
+            step1_text: 'Facebook มักจะส่งเหตุผลของการแบนไปที่ <strong>security@facebookmail.com</strong> หรือในแท็บการแจ้งเตือน ตรวจสอบโฟลเดอร์ Spam — บางครั้งอีเมลไปอยู่ที่นั่น หากไม่มีอีเมล แสดงว่าการแบนเป็นไปโดยอัตโนมัติโดยไม่มีคำอธิบาย',
+            step1_tip: '💡 เคล็ดลับ: เพิ่มอีเมลของ Facebook ลงในรายการขาวเพื่อไม่พลาดข้อความสำคัญ',
+            step2_title: "2. ยื่นอุทธรณ์",
+            step2_text: 'กรอก <strong>แบบฟอร์มอุทธรณ์ของ Facebook</strong> ด้วยข้อมูลจริงของคุณ แนบบัตรประจำตัวของคุณหากมีการร้องขอ ให้สั้นและตรงไปตรงมา — อัลกอริทึมไม่อ่านข้อความยาว พูดว่า: "บัญชีของฉันถูกบล็อกโดยไม่ได้ตั้งใจ ฉันไม่ได้ละเมิดกฎ"',
+            step2_li1: 'ใช้ <strong>ชื่อจริง</strong> จากบัญชีของคุณ',
+            step2_li2: 'แนบรูปถ่าย <strong>หนังสือเดินทางหรือบัตรประจำตัว</strong> ของคุณหากมีการร้องขอ',
+            step2_li3: 'ส่งอุทธรณ์ <strong>หลายครั้ง</strong> จากเบราว์เซอร์ที่แตกต่างกัน',
+            step2_tip: '⚠️ หากปุ่ม "ส่ง" ไม่ทำงาน — ลองใช้เบราว์เซอร์อื่นหรือล้างแคชของคุณ',
+            step3_title: "3. ติดต่อฝ่ายสนับสนุน Business Manager",
+            step3_text: 'หากคุณมี <strong>Business Manager</strong> — ติดต่อฝ่ายสนับสนุนจากที่นั่น พวกเขาตอบกลับเร็วขึ้น Business Manager ให้การเข้าถึง <strong>การสนับสนุนแชทสด</strong> ซึ่งแตกต่างจากผู้ใช้ทั่วไป',
+            step3_li1: 'ไปที่ Business Manager → ความช่วยเหลือ → ติดต่อฝ่ายสนับสนุน',
+            step3_li2: 'เลือก <strong>แชทหรืออีเมล</strong>',
+            step3_li3: 'อธิบายปัญหาและเพิ่ม ID บัญชีของคุณ',
+            step4_title: "4. ส่งอีเมลถึง Facebook โดยตรง",
+            step4_text: 'ลองอีเมลเหล่านี้:',
+            step4_text2: 'รวม: <strong>ชื่อของคุณ, อีเมลบัญชี, ID เพจ</strong> และอธิบายสถานการณ์โดยย่อ แนบรูปถ่ายบัตรประจำตัวของคุณหากมี',
+            step4_tip: '⚠️ โอกาสในการตอบกลับต่ำมาก แต่ก็ควรลอง บางครั้งการตอบกลับอัตโนมัติจะมาถึงหลังจาก 2-3 สัปดาห์',
+            step5_title: "5. อย่าตกเป็นเหยื่อของมิจฉาชีพ",
+            step5_text: '<strong>⚠️ ไม่มีใครสามารถปลดล็อก Facebook ได้ในราคา 50 ดอลลาร์</strong>',
+            step5_text2: 'หาก "ผู้เชี่ยวชาญ" สัญญาว่าจะปลดล็อกบัญชีของคุณด้วยเงิน — พวกเขาคือ <strong>มิจฉาชีพ</strong> พวกเขาจะเอาเงินของคุณและหายไป หรือแย่กว่านั้น — บล็อกคุณอีกครั้ง',
+            step5_li1: 'อย่าแชร์ <strong>รหัสผ่าน</strong> ของคุณกับใคร',
+            step5_li2: 'อย่าคลิก <strong>ลิงก์ที่น่าสงสัย</strong>',
+            step5_li3: 'จำไว้: <strong>การสนับสนุนของ Facebook ฟรีเสมอ</strong>',
+            article_title: '📌 ไม่ว่าในกรณีใด — เตรียมบัญชีใหม่',
+            article_p1: '<strong>ความจริงคือ:</strong> แม้ว่าคุณจะยื่นอุทธรณ์และติดต่อฝ่ายสนับสนุน — <strong>โอกาสในการปลดล็อกมีน้อยมาก</strong> อัลกอริทึมไม่ฟัง ฝ่ายสนับสนุนไม่ตอบกลับ ไม่มีคนจริงภายใน Facebook',
+            article_p2: 'ดังนั้น <strong>ทางออกเดียวที่ใช้ได้</strong> คือการสร้างบัญชีใหม่และเริ่มต้นใหม่ ใช่ มันเจ็บปวด ใช่ มันไม่ยุติธรรม แต่นั่นคือ <strong>ความจริง</strong>',
+            article_tip_label: '💡 เคล็ดลับ:',
+            article_tip_text: 'สร้างบัญชีด้วย <strong>อีเมลธุรกิจ</strong> เปิดใช้งาน <strong>การยืนยันตัวตนแบบสองปัจจัย</strong> และ <strong>อย่าละเมิดกฎ</strong> ซึ่งจะลดความเสี่ยงในการถูกแบน',
+            article_p3: '<strong>จำไว้:</strong> หากคุณดำเนินธุรกิจ — อย่าเก็บทุกอย่างไว้ในบัญชีเดียว สร้าง <strong>หลายโปรไฟล์</strong> ใช้ <strong>Business Manager</strong> และ <strong>สำรองข้อมูลฐานลูกค้า</strong> ของคุณ',
+            tg_button: '📩 ติดต่อเราบน Telegram (ช่วยเหลือด้านการโปรโมต)',
+            social_label: '▸ โซเชียลมีเดียของเรา ◂'
+        },
+        tl: {
+            title: "Pagbawi ng Facebook Account",
+            subtitle: "Hakbang-hakbang na gabay upang mabawi ang iyong disabled account",
+            step1_title: "1. Suriin ang Email at Mga Abiso",
+            step1_text: 'Karaniwang nagpapadala ang Facebook ng dahilan ng pagbabawal sa <strong>security@facebookmail.com</strong> o sa tab ng mga abiso. Suriin ang iyong Spam folder — minsan napupunta doon ang mga email. Kung walang email, awtomatiko ang pagbabawal nang walang paliwanag.',
+            step1_tip: '💡 Tip: Idagdag ang email ng Facebook sa iyong whitelist upang hindi makaligtaan ang mahahalagang mensahe.',
+            step2_title: "2. Magsumite ng Apela",
+            step2_text: 'Punan ang <strong>Facebook Appeal Form</strong> gamit ang iyong tunay na datos. Ilakip ang iyong ID kung hinihingi. Maging maikli at tapat — hindi nagbabasa ng mahahabang teksto ang mga algorithm. Sabihin: "Ang aking account ay na-block nang hindi sinasadya, hindi ko nilabag ang mga patakaran."',
+            step2_li1: 'Gamitin ang <strong>tunay na pangalan</strong> mula sa iyong account',
+            step2_li2: 'Ilakip ang larawan ng iyong <strong>pasaporte o ID</strong> kung hinihingi',
+            step2_li3: 'Isumite ang apela <strong>nang maraming beses</strong> mula sa iba\'t ibang browser',
+            step2_tip: '⚠️ Kung hindi gumagana ang pindutang "Isumite" — subukan ang ibang browser o i-clear ang iyong cache.',
+            step3_title: "3. Makipag-ugnayan sa Business Manager Support",
+            step3_text: 'Kung mayroon kang <strong>Business Manager</strong> — makipag-ugnayan sa support mula doon. Mas mabilis silang tumugon. Ang Business Manager ay nagbibigay ng access sa <strong>live chat support</strong>, hindi tulad ng mga regular na gumagamit.',
+            step3_li1: 'Pumunta sa Business Manager → Tulong → Makipag-ugnayan sa Support',
+            step3_li2: 'Pumili ng <strong>chat o email</strong>',
+            step3_li3: 'Ilarawan ang problema at idagdag ang iyong account ID',
+            step4_title: "4. Mag-email nang Direkta sa Facebook",
+            step4_text: 'Subukan ang mga email na ito:',
+            step4_text2: 'Isama: <strong>iyong pangalan, email ng account, ID ng page</strong> at ilarawan nang maikli ang sitwasyon. Ilakip ang larawan ng iyong ID kung magagamit.',
+            step4_tip: '⚠️ Napakababa ng pagkakataon ng tugon, ngunit sulit na subukan. Minsan dumarating ang awtomatikong tugon pagkatapos ng 2-3 linggo.',
+            step5_title: "5. Huwag Magpaloko sa mga Scammer",
+            step5_text: '<strong>⚠️ Walang sinuman ang makakapag-unlock ng Facebook sa halagang $50.</strong>',
+            step5_text2: 'Kung ang "mga espesyalista" ay nangangakong i-unlock ang iyong account kapalit ng pera — sila ay <strong>mga scammer</strong>. Kukunin nila ang iyong pera at mawawala, o mas masahol pa — iba-block ka nila muli.',
+            step5_li1: 'Huwag kailanman ibahagi ang iyong <strong>mga password</strong> sa kanino man',
+            step5_li2: 'Huwag mag-click sa <strong>mga kahina-hinalang link</strong>',
+            step5_li3: 'Tandaan: <strong>ang suporta ng Facebook ay palaging libre</strong>',
+            article_title: '📌 Sa anumang kaso — maghanda ng bagong account',
+            article_p1: '<strong>Ang katotohanan ay:</strong> kahit na magsumite ka ng apela at makipag-ugnayan sa suporta — <strong>napakaliit ng pagkakataon ng pag-unlock</strong>. Hindi nakikinig ang mga algorithm, hindi tumutugon ang suporta, walang tunay na tao sa loob ng Facebook.',
+            article_p2: 'Kaya naman, ang <strong>tanging solusyon na gumagana</strong> ay ang lumikha ng bagong account at magsimula muli. Oo, masakit. Oo, hindi makatarungan. Ngunit iyon ang <strong>katotohanan</strong>.',
+            article_tip_label: '💡 Tip:',
+            article_tip_text: 'gumawa ng account gamit ang isang <strong>business email</strong>, i-enable ang <strong>two-factor authentication</strong>, at <strong>huwag lumabag sa mga patakaran</strong>. Bawasan nito ang panganib ng pagbabawal.',
+            article_p3: '<strong>Tandaan:</strong> kung nagpapatakbo ka ng negosyo — huwag itago ang lahat sa isang account. Gumawa ng <strong>maraming profile</strong>, gamitin ang <strong>Business Manager</strong>, at gumawa ng <strong>mga backup ng iyong client base</strong>.',
+            tg_button: '📩 Makipag-ugnayan sa amin sa Telegram (tulong sa promosyon)',
+            social_label: '▸ AMING MGA SOCIAL MEDIA ◂'
+        },
+        fa: {
+            title: "بازیابی حساب فیسبوک",
+            subtitle: "راهنمای گام‌به‌گام برای بازیابی حساب غیرفعال شده شما",
+            step1_title: "1. ایمیل و اعلان‌ها را بررسی کنید",
+            step1_text: 'فیسبوک معمولاً دلیل مسدودیت را به <strong>security@facebookmail.com</strong> یا در برگه اعلان‌ها ارسال می‌کند. پوشه اسپم خود را بررسی کنید — گاهی ایمیل‌ها به آنجا می‌روند. اگر ایمیلی وجود ندارد، مسدودیت به صورت خودکار بدون توضیح بوده است.',
+            step1_tip: '💡 نکته: برای اینکه پیام‌های مهم را از دست ندهید، ایمیل فیسبوک را به لیست سفید خود اضافه کنید.',
+            step2_title: "2. درخواست تجدیدنظر ارسال کنید",
+            step2_text: '<strong>فرم درخواست تجدیدنظر فیسبوک</strong> را با داده‌های واقعی خود پر کنید. در صورت درخواست، کارت شناسایی خود را پیوست کنید. مختصر و صادق باشید — الگوریتم‌ها متن‌های طولانی را نمی‌خوانند. بگویید: "حساب من به اشتباه مسدود شده است، من قوانین را نقض نکرده‌ام."',
+            step2_li1: 'از <strong>نام واقعی</strong> حساب خود استفاده کنید',
+            step2_li2: 'در صورت درخواست، عکس <strong>گذرنامه یا کارت شناسایی</strong> خود را پیوست کنید',
+            step2_li3: 'درخواست تجدیدنظر را <strong>چندین بار</strong> از مرورگرهای مختلف ارسال کنید',
+            step2_tip: '⚠️ اگر دکمه "ارسال" کار نمی‌کند — مرورگر دیگری را امتحان کنید یا کش خود را پاک کنید.',
+            step3_title: "3. با پشتیبانی Business Manager تماس بگیرید",
+            step3_text: 'اگر <strong>Business Manager</strong> دارید — از آنجا با پشتیبانی تماس بگیرید. آنها سریع‌تر پاسخ می‌دهند. Business Manager برخلاف کاربران عادی، به <strong>پشتیبانی چت زنده</strong> دسترسی می‌دهد.',
+            step3_li1: 'به Business Manager → راهنما → تماس با پشتیبانی بروید',
+            step3_li2: '<strong>چت یا ایمیل</strong> را انتخاب کنید',
+            step3_li3: 'مشکل را توضیح دهید و شناسه حساب خود را اضافه کنید',
+            step4_title: "4. مستقیماً به فیسبوک ایمیل بزنید",
+            step4_text: 'این ایمیل‌ها را امتحان کنید:',
+            step4_text2: 'شامل کنید: <strong>نام شما، ایمیل حساب، شناسه صفحه</strong> و به طور مختصر وضعیت را توضیح دهید. در صورت موجود بودن، عکس کارت شناسایی خود را پیوست کنید.',
+            step4_tip: '⚠️ احتمال پاسخ بسیار کم است، اما ارزش امتحان کردن را دارد. گاهی پاسخ‌های خودکار پس از ۲-۳ هفته می‌رسند.',
+            step5_title: "5. فریب کلاهبرداران را نخورید",
+            step5_text: '<strong>⚠️ هیچ کس نمی‌تواند فیسبوک را با ۵۰ دلار باز کند.</strong>',
+            step5_text2: 'اگر "متخصصان" قول باز کردن حساب شما در ازای پول را می‌دهند — آنها <strong>کلاهبردار</strong> هستند. پول شما را می‌گیرند و ناپدید می‌شوند، یا بدتر — دوباره شما را مسدود می‌کنند.',
+            step5_li1: 'هرگز <strong>رمزهای عبور</strong> خود را با کسی به اشتراک نگذارید',
+            step5_li2: 'روی <strong>لینک‌های مشکوک</strong> کلیک نکنید',
+            step5_li3: 'به یاد داشته باشید: <strong>پشتیبانی فیسبوک همیشه رایگان است</strong>',
+            article_title: '📌 در هر صورت — یک حساب جدید آماده کنید',
+            article_p1: '<strong>واقعیت این است:</strong> حتی اگر درخواست تجدیدنظر ارسال کنید و با پشتیبانی تماس بگیرید — <strong>احتمال باز شدن بسیار کم است</strong>. الگوریتم‌ها گوش نمی‌دهند، پشتیبانی پاسخ نمی‌دهد، هیچ انسانی در داخل فیسبوک وجود ندارد.',
+            article_p2: 'بنابراین، <strong>تنها راه حل عملی</strong> ایجاد یک حساب جدید و شروع از صفر است. بله، دردناک است. بله، ناعادلانه است. اما این <strong>واقعیت</strong> است.',
+            article_tip_label: '💡 نکته:',
+            article_tip_text: 'با یک <strong>ایمیل تجاری</strong> حساب ایجاد کنید، <strong>احراز هویت دو مرحله‌ای</strong> را فعال کنید و <strong>قوانین را نقض نکنید</strong>. این کار خطر مسدودیت را کاهش می‌دهد.',
+            article_p3: '<strong>به یاد داشته باشید:</strong> اگر کسب و کار دارید — همه چیز را در یک حساب نگه ندارید. <strong>چندین پروفایل</strong> ایجاد کنید، از <strong>Business Manager</strong> استفاده کنید و از <strong>پایگاه مشتریان خود پشتیبان</strong> بگیرید.',
+            tg_button: '📩 از طریق تلگرام با ما تماس بگیرید (کمک در تبلیغات)',
+            social_label: '▸ رسانه‌های اجتماعی ما ◂'
+        },
+        ms: {
+            title: "Pemulihan Akaun Facebook",
+            subtitle: "Panduan langkah demi langkah untuk memulihkan akaun anda yang dilumpuhkan",
+            step1_title: "1. Semak E-mel & Notifikasi",
+            step1_text: 'Facebook biasanya menghantar sebab larangan ke <strong>security@facebookmail.com</strong> atau dalam tab pemberitahuan. Semak folder Spam anda — kadang-kadang e-mel masuk ke sana. Jika tiada e-mel, larangan adalah automatik tanpa penjelasan.',
+            step1_tip: '💡 Petua: Tambahkan e-mel Facebook ke senarai putih anda untuk mengelakkan terlepas mesej penting.',
+            step2_title: "2. Hantar Rayuan",
+            step2_text: 'Isi <strong>Borang Rayuan Facebook</strong> dengan data sebenar anda. Lampirkan ID anda jika diminta. Jadilah ringkas dan jujur — algoritma tidak membaca teks panjang. Katakan: "Akaun saya disekat secara tidak sengaja, saya tidak melanggar peraturan."',
+            step2_li1: 'Gunakan <strong>nama sebenar</strong> dari akaun anda',
+            step2_li2: 'Lampirkan gambar <strong>pasport atau ID</strong> anda jika diminta',
+            step2_li3: 'Hantar rayuan <strong>beberapa kali</strong> dari pelayar yang berbeza',
+            step2_tip: '⚠️ Jika butang "Hantar" tidak berfungsi — cuba pelayar lain atau kosongkan cache anda.',
+            step3_title: "3. Hubungi Sokongan Business Manager",
+            step3_text: 'Jika anda mempunyai <strong>Business Manager</strong> — hubungi sokongan dari sana. Mereka bertindak balas lebih cepat. Business Manager memberi akses kepada <strong>sokongan sembang langsung</strong>, tidak seperti pengguna biasa.',
+            step3_li1: 'Pergi ke Business Manager → Bantuan → Hubungi Sokongan',
+            step3_li2: 'Pilih <strong>sembang atau e-mel</strong>',
+            step3_li3: 'Terangkan masalah dan tambahkan ID akaun anda',
+            step4_title: "4. E-mel Facebook Secara Terus",
+            step4_text: 'Cuba e-mel ini:',
+            step4_text2: 'Sertakan: <strong>nama anda, e-mel akaun, ID halaman</strong> dan terangkan secara ringkas situasi. Lampirkan gambar ID anda jika ada.',
+            step4_tip: '⚠️ Peluang untuk mendapat balasan sangat rendah, tetapi patut dicuba. Kadang-kadang respons automatik tiba selepas 2-3 minggu.',
+            step5_title: "5. Jangan Terpedaya dengan Penipu",
+            step5_text: '<strong>⚠️ Tiada siapa boleh membuka kunci Facebook dengan $50.</strong>',
+            step5_text2: 'Jika "pakar" berjanji untuk membuka kunci akaun anda dengan wang — mereka adalah <strong>penipu</strong>. Mereka akan mengambil wang anda dan hilang, atau lebih teruk — menyekat anda semula.',
+            step5_li1: 'Jangan sekali-kali berkongsi <strong>kata laluan</strong> anda dengan sesiapa',
+            step5_li2: 'Jangan klik pada <strong>pautan yang mencurigakan</strong>',
+            step5_li3: 'Ingat: <strong>sokongan Facebook sentiasa percuma</strong>',
+            article_title: '📌 Dalam apa jua keadaan — sediakan akaun baru',
+            article_p1: '<strong>Realitinya ialah:</strong> walaupun anda menghantar rayuan dan menghubungi sokongan — <strong>peluang untuk membuka kunci adalah minimum</strong>. Algoritma tidak mendengar, sokongan tidak bertindak balas, tiada orang sebenar di dalam Facebook.',
+            article_p2: 'Oleh itu, <strong>satu-satunya penyelesaian yang berkesan</strong> ialah mencipta akaun baru dan bermula dari awal. Ya, ia menyakitkan. Ya, ia tidak adil. Tetapi itulah <strong>realiti</strong>.',
+            article_tip_label: '💡 Petua:',
+            article_tip_text: 'buat akaun dengan <strong>e-mel perniagaan</strong>, aktifkan <strong>pengesahan dua faktor</strong>, dan <strong>jangan melanggar peraturan</strong>. Ini akan mengurangkan risiko larangan.',
+            article_p3: '<strong>Ingat:</strong> jika anda menjalankan perniagaan — jangan simpan segala-galanya dalam satu akaun. Buat <strong>beberapa profil</strong>, gunakan <strong>Business Manager</strong>, dan buat <strong>sandaran pangkalan pelanggan anda</strong>.',
+            tg_button: '📩 Hubungi kami di Telegram (bantuan promosi)',
+            social_label: '▸ MEDIA SOSIAL KAMI ◂'
+        }
+    };
+
+    // ====== ЗАВАНТАЖЕННЯ МОВИ ======
+    let currentLang = 'en';
+
+    function setLanguage(lang) {
+        if (!translations[lang]) return;
+        currentLang = lang;
+        const t = translations[lang];
+        
+        // Оновлюємо всі елементи з data-i18n
+        document.querySelectorAll('[data-i18n]').forEach(el => {
+            const key = el.getAttribute('data-i18n');
+            if (t[key] !== undefined) {
+                if (key === 'step1_text' || key === 'step2_text' || key === 'step3_text' || key === 'step4_text' || key === 'step5_text' || 
+                    key === 'article_p1' || key === 'article_p2' || key === 'article_p3' || key === 'article_tip_text') {
+                    el.innerHTML = t[key];
+                } else {
+                    el.textContent = t[key];
+                }
+            }
+        });
+
+        // Оновлюємо бігучу строку
+        const marqueeText = document.getElementById('marqueeText');
+        if (marqueeText) {
+            const msgs = [
+                '🔥 Facebook Recovery Guide · How to unblock Facebook · Recover account · Account disabled fix · Appeal form · Help center',
+                '🔥 Guía de recuperación de Facebook · Cómo desbloquear Facebook · Recuperar cuenta · Apelación',
+                '🔥 Guia de recuperação do Facebook · Como desbloquear o Facebook · Recuperar conta',
+                '🔥 دليل استعادة Facebook · كيفية إلغاء حظر Facebook · استعادة الحساب',
+                '🔥 फेसबुक रिकवरी गाइड · फेसबुक अनब्लॉक कैसे करें · खाता पुनर्प्राप्त करें',
+                '🔥 Guide de récupération Facebook · Comment débloquer Facebook · Récupérer un compte',
+                '🔥 Facebook-Wiederherstellung · So entsperren Sie Facebook · Konto wiederherstellen',
+                '🔥 Panduan Pemulihan Facebook · Cara membuka blokir Facebook · Pulihkan akun',
+                '🔥 Facebook Kurtarma Rehberi · Facebook nasıl açılır · Hesap kurtarma',
+                '🔥 Guida al recupero di Facebook · Come sbloccare Facebook · Recuperare account',
+                '🔥 Восстановление Facebook · Как разблокировать Facebook · Восстановить аккаунт',
+                '🔥 Відновлення Facebook · Як розблокувати Facebook · Відновити аккаунт',
+                '🔥 Przewodnik odzyskiwania Facebook · Jak odblokować Facebook · Odzyskać konto',
+                '🔥 Facebook-herstelgids · Hoe Facebook te ontgrendelen · Account herstellen',
+                '🔥 Facebook復旧ガイド · Facebookのロックを解除する方法 · アカウントを復元',
+                '🔥 Facebook 복구 가이드 · Facebook 잠금 해제 방법 · 계정 복구',
+                '🔥 Facebook恢复指南 · 如何解锁Facebook · 恢复账户',
+                '🔥 Facebook পুনরুদ্ধার গাইড · Facebook আনলক কিভাবে করবেন · অ্যাকাউন্ট পুনরুদ্ধার',
+                '🔥 Facebook بازیابی گائیڈ · Facebook کو کیسے انلاک کریں · اکاؤنٹ بحال کریں',
+                '🔥 Hướng dẫn khôi phục Facebook · Cách mở khóa Facebook · Khôi phục tài khoản',
+                '🔥 คู่มือการกู้คืน Facebook · วิธีปลดล็อก Facebook · กู้คืนบัญชี',
+                '🔥 Gabay sa Pagbawi ng Facebook · Paano i-unlock ang Facebook · I-recover ang account',
+                '🔥 راهنمای بازیابی فیسبوک · چگونه فیسبوک را باز کنیم · بازیابی حساب'
+            ];
+            const langMap = { en:0, es:1, pt:2, ar:3, hi:4, fr:5, de:6, id:7, tr:8, it:9, ru:10, uk:11, pl:12, nl:13, ja:14, ko:15, zh:16, bn:17, ur:18, vi:19, th:20, tl:21, fa:22, ms:23 };
+            const idx = langMap[lang] || 0;
+            marqueeText.textContent = msgs[idx] || msgs[0];
+        }
+
+        // Оновлюємо кнопки мови
+        document.querySelectorAll('.lang-btn').forEach(btn => {
+            btn.classList.toggle('active', btn.dataset.lang === lang);
+        });
+
+        // Зберігаємо вибір
+        localStorage.setItem('preferredLang', lang);
+    }
+
+    // ====== ОБРОБНИК КНОПОК ======
+    document.querySelectorAll('.lang-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            setLanguage(this.dataset.lang);
+        });
+    });
+
+    // ====== АВТОМАТИЧНЕ ВИЗНАЧЕННЯ МОВИ ======
+    document.addEventListener('DOMContentLoaded', function() {
+        // Спроба завантажити збережену мову
+        const savedLang = localStorage.getItem('preferredLang');
+        if (savedLang && translations[savedLang]) {
+            setLanguage(savedLang);
+            return;
+        }
+
+        // Визначення за браузером
+        const browserLang = navigator.language.split('-')[0];
+        const availableLangs = Object.keys(translations);
+        if (availableLangs.includes(browserLang)) {
+            setLanguage(browserLang);
+        } else {
+            setLanguage('en'); // за замовчуванням
+        }
+    });
+
+    // ====== АККОРДЕОН ======
+    document.querySelectorAll('.accordion-btn').forEach(btn => {
+        btn.addEventListener('click', function() {
+            const item = this.parentElement;
+            const isActive = item.classList.contains('active');
+            document.querySelectorAll('.accordion-item').forEach(el => el.classList.remove('active'));
+            if (!isActive) item.classList.add('active');
+        });
+    });
+</script>
+</body>
+</html>
